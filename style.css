@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    color: rgb(22, 105, 131);
+    /* margin-left: 5vw; */
+}
+.poppins-regular2 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size:medium;
+    font-style: normal;
+    color: white;
+}
+.poppins-regular3 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size:xx-large;
+    font-style: normal;
+    color: white;
+}
+.poppins-regular4 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    color: rgb(246, 248, 248);
+    
+}
+/* Header */
+
+header{
+    z-index: 100;
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container1{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 40px;
+}
+.container2{
+    width:100% ;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    background-image: url(./Logo-removebg-preview.png);
+    background-size: cover;
+}
+.oracao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    height: 50px;
+    width: 150px;
+    background-color: brown;
+    border-radius: 30px;
+}
+.bordaLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgb(98, 159, 194);
+}
+
+/* Body */
+.box_logo{
+    margin-top: 50px;
+    width: 320px;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo2{
+    width: 300px;
+    height: 300px;
+    background-image: url(./Logo-removebg-preview.png);
+    background-size: cover;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+.title{
+    padding-top: 150px;
+    gap: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 90px;
+    margin-bottom: 150px;
+    /* background-color: rgba(49, 255, 249, 0.3); */
+}
+.playwrite-au-vic-guides-regular {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 150px;
+  }
+.playwrite-au-vic-guides-regular2 {
+    margin-left: 200px;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+  }
+.parallax1{
+    padding-top: 100px;
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.6)20%, rgba(0, 0, 0, 0)), /* Degradê */
+        url(./sky.jpg);
+}
+.parallax2{
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.6)100%, rgba(0, 0, 0, 0)), /* Degradê */
+        url(./trigo2.jpg);
+    /* background-image: url(./trigo2.jpg); */
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.defaut{
+    display:flex;
+    width: 100vw;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.info1{
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 50vw;
+    gap: 30px;
+}
+.info2{
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 50vw;
+    gap: 30px;
+}
+.foto1{
+    height: 300px;
+    width: 30vw;
+    background-image: url(./pastores.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+.foto2{
+    height: 300px;
+    width: 30vw;
+    background-image: url(./pastores.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+}
+.face{
+    position: absolute;
+    right: 355px;
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./face.png);
+    background-size: cover;
+    
+    
+}
+.youtube{
+    position: absolute;
+    right: 300px;
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./youtube.png);
+    background-size: cover;
+}
