@@ -9,7 +9,16 @@
     font-size: large;
     font-style: normal;
     color: rgb(22, 105, 131);
-    /* margin-left: 5vw; */
+    
+}
+.poppins-regular1 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    color: rgb(22, 105, 131);
+    text-align: center;
+    
 }
 .poppins-regular2 {
     font-family: "Poppins", serif;
@@ -31,6 +40,27 @@
     font-size: large;
     font-style: normal;
     color: rgb(246, 248, 248);
+    
+}
+.poppins-regular5 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    color: rgb(22, 105, 131);
+    font-size: 40px;
+    
+}
+.poppins-regular6 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(22, 105, 131);
+    font-size: 15px;
+    text-align: justify;
+    padding: 5px;
+
+
     
 }
 /* Header */
@@ -64,9 +94,9 @@ header{
     gap: 30px;
 }
 .logo{
-    width: 80px;
-    height: 80px;
-    background-image: url(./Logo-removebg-preview.png);
+    width: 100px;
+    height: 70px;
+    background-image: url(./logo2.png);
     background-size: cover;
 }
 .oracao{
@@ -87,7 +117,7 @@ header{
     width: 90px;
     height: 90px;
     border-radius: 50px;
-    background-color: rgb(98, 159, 194);
+    /* background-color: rgb(98, 159, 194); */
 }
 
 /* Body */
@@ -173,6 +203,16 @@ body{
     gap: 20px;
     
 }
+.defaut2{
+    display:flex;
+    width: 100vw;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
 .info1{
     align-items: center;
     justify-content: center;
@@ -190,15 +230,16 @@ body{
 .foto1{
     height: 300px;
     width: 30vw;
-    background-image: url(./pastores.jpeg);
+    background-image: url(./foto2.jpeg);
     background-size: cover;
+    background-position: center;
     border-radius: 10px;
     
 }
 .foto2{
     height: 300px;
     width: 30vw;
-    background-image: url(./pastores.jpeg);
+    background-image: url(./FOTO3.jpeg);
     background-size: cover;
     border-radius: 10px;
     box-shadow: 2px 2px 5px;
@@ -222,4 +263,39 @@ body{
     height: 50px;
     background-image: url(./youtube.png);
     background-size: cover;
+}
+.box_info{
+    width: 340px;
+    height: 400px;
+    background-color: rgb(22, 105, 131);
+    box-shadow: 2px 2px 1px;
+    border-radius: 5px;
+    
+}
+.titulo_culto{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20px;
+    background-color: white;
+}
+.video-thumbnail{
+    width: 320px; 
+    height: 180px; 
+    background-size: cover; 
+    background-position: center;
+    border: 2px solid #000000;
+    cursor: pointer; 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.info_info{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 320px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    
 }
