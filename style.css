@@ -230,7 +230,7 @@ body{
 .foto1{
     height: 300px;
     width: 30vw;
-    background-image: url("./FOTO2.jpeg");
+    background-image: url(./FOTO2.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -239,7 +239,7 @@ body{
 .foto2{
     height: 300px;
     width: 30vw;
-    background-image: url("./foto3.jpeg");
+    background-image: url(./foto3.jpeg);
     background-size: cover;
     border-radius: 10px;
     box-shadow: 2px 2px 5px;
