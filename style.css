@@ -11,12 +11,7 @@
     color: rgb(22, 105, 131);
     
 }
-.poppins-regular1 {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-size: large;
-    font-style: normal;
-    color: rgb(22, 105, 131);
+.poppins-regular:p1 {
     text-align: center;
     
 }
@@ -105,7 +100,7 @@ header{
 .logo{
     width: 100px;
     height: 70px;
-    background-image: url(./logo2.png);
+    background-image: url(./img/logo2.png);
     background-size: cover;
 }
 .oracao{
@@ -117,18 +112,33 @@ header{
     width: 150px;
     background-color: brown;
     border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .bordaLogo{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-left: 10px;
     width: 90px;
     height: 90px;
     border-radius: 50px;
-    /* background-color: rgb(98, 159, 194); */
+    
 }
-
+.button_menu{
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.button_menu:hover{
+    background-color:#277d97;
+}
+.poppins-regular#menu:hover{
+    color: white;
+}
+.oracao:hover{
+    background-color: rgb(255, 134, 54);
+}
 /* Body */
 .box_logo{
     margin-top: 50px;
@@ -139,29 +149,74 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: 2; 
+    grid-row: 1 / 2; 
 }
 .logo2{
     width: 300px;
     height: 300px;
-    background-image: url(./Logo-removebg-preview.png);
+    background-image: url(./img/Logo-removebg-preview.png);
     background-size: cover;
 }
-body{
-    background-color: black;
-    overflow-x: hidden;
-    
-}
 .title{
-    padding-top: 150px;
-    gap: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 10vw 1fr 1fr 50px 1fr; 
+    grid-template-rows: 300px 100px;
     color: white;
     height: 90px;
     margin-bottom: 150px;
-    /* background-color: rgba(49, 255, 249, 0.3); */
+    gap: 20px;
+    align-items: center;
+    
 }
+.box_text{
+    height: 100px;
+    width: 45vw;
+    font-size: 30px;
+    grid-column: 3/6;
+    grid-row: 1/2;
+    margin-top: 0px;
+}
+.poppins-regular4#versiculo{
+    font-size: 30px;
+}
+.face{
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/face.png);
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 2;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.face:hover{
+    transform: scale(1.1);
+}
+.youtube{
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/youtube.png);
+    background-size: cover;
+    grid-column: 5;
+    grid-row: 2;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.youtube:hover{
+    transform: scale(1.1);
+    
+}
+
+body{
+    background-color: rgb(216, 241, 255);
+    overflow-x: hidden;
+    
+}
+
 .playwrite-au-vic-guides-regular {
     font-family: "Dancing Script", serif;
     font-optical-sizing: auto;
@@ -185,7 +240,7 @@ body{
     background-attachment: fixed;
     background-image: 
         linear-gradient(to top, rgba(0, 0, 0, 0.6)20%, rgba(0, 0, 0, 0)), /* Degradê */
-        url(./sky.jpg);
+        url(./img/sky.jpg);
 }
 
 .defaut{
@@ -216,7 +271,7 @@ body{
 .foto1{
     height: 300px;
     width: 300px;
-    background-image: url(./FOTO2.jpeg);
+    background-image: url(./img/FOTO2.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -224,26 +279,7 @@ body{
     
 }
 
-.face{
-    position: absolute;
-    right: 355px;
-    margin-top: 50px;
-    width: 50px;
-    height: 50px;
-    background-image: url(./face.png);
-    background-size: cover;
-    
-    
-}
-.youtube{
-    position: absolute;
-    right: 300px;
-    margin-top: 50px;
-    width: 50px;
-    height: 50px;
-    background-image: url(./youtube.png);
-    background-size: cover;
-}
+
 .box_info{
     width: 340px;
     height: 400px;
@@ -261,6 +297,7 @@ body{
     cursor: pointer; 
     margin-left: 10px;
     margin-top: 10px;
+    border-radius: 5px;
 }
 .info_info{
     margin-left: 10px;
@@ -286,7 +323,7 @@ body{
     margin-left: 20px;
     width: 100px;
     height: 100px;
-    background-image: url(./ornamento.png);
+    background-image: url(./img/ornamento.png);
     background-size: cover;
    
 }
@@ -302,7 +339,7 @@ body{
     /* grid-template-columns: 35vw 1fr; */
     background-image: 
         linear-gradient(to top, rgba(0, 0, 0, 0.6)100%, rgba(0, 0, 0, 0)),
-        url(./bk-biblia.jpg);
+        url(./img/bk-biblia.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -332,7 +369,7 @@ body{
 .foto2{
     height: 300px;
     width: 300px;
-    background-image: url(./culto.png);
+    background-image: url(./img/culto.png);
     background-size: cover;
     border-radius: 10px;
     box-shadow: 2px 2px 5px;
@@ -357,7 +394,7 @@ body{
 .foto_evento1{
     height: 300px;
     width: 100%;
-    background-image: url(./evento3.jpg);
+    background-image: url(./img/evento3.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -386,7 +423,7 @@ body{
 .foto_evento3{
     height: 300px;
     width: 100%;
-    background-image: url(./evento2.jpeg);
+    background-image: url(./img/evento2.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -442,4 +479,51 @@ body{
     background-color: white;
     gap: 20px;
 
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(216, 241, 255);
+    
+}
+.fundo_versiculo{
+    height: 200px;
+}
+.gallery-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;  /* Ajuste a altura conforme necessário */
+    flex-shrink: 0;  /* Impede que as imagens encolham */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
 }

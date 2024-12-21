@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/logo2.png">
     <title>Igreja Evangelica Semear</title>
 </head>
 <header>
@@ -17,13 +18,25 @@
         </div>    
     </div>
     <div class="container2">
-        <p class="poppins-regular">Home</p>
-        <p class="poppins-regular">Sobre Nós</p>
-        <p class="poppins-regular">Cultos</p>
-        <p class="poppins-regular">Eventos</p>
-        <p class="poppins-regular">Galeria</p>
-        <p class="poppins-regular">Doações</p>
-        <div class="oracao">
+        <div class="button_menu">
+            <p class="poppins-regular" id="menu">Home</p>
+        </div>
+        <div class="button_menu">
+            <p class="poppins-regular" id="menu">Sobre Nós</p>
+        </div>
+        <div class="button_menu">
+            <p class="poppins-regular" id="menu">Cultos</p>
+        </div>
+        <div class="button_menu">
+            <p class="poppins-regular" id="menu">Eventos</p>
+        </div>
+        <div class="button_menu">
+            <p class="poppins-regular" id="menu">Galeria</p>
+        </div>
+        <div class="button_menu">
+            <p class="poppins-regular" id="menu">Doações</p>
+        </div>
+        <div class="oracao"  id="menu">
             <p class="poppins-regular2">Pedir Oração</p>
         </div>
     </div>
@@ -37,12 +50,18 @@
                 <div class="logo2"></div>
             </div>
             <div class="box_text">
-                <h1 class="playwrite-au-vic-guides-regular">Jesus é</h1>
-                <p class="playwrite-au-vic-guides-regular2">amor!</p>
+                <p class="poppins-regular4" id="versiculo">Carregando...</p>
+                <!-- <p class="poppins-regular4" id="mensagem">Carregando...</p> -->
+            </div>
+            <div 
+                class="face"
+                onclick="window.open('https://www.facebook.com/comunidade.evangelica.semear.bauru/?locale=pt_BR', '_blank')">
+            </div>
+            <div 
+                class="youtube"
+                onclick="window.open('https://www.youtube.com/@comunidadeevangelicasemear9632', '_blank')">
             </div>
         </section>
-        <div class="face"></div>
-        <div class="youtube"></div>
     </section>
     <section class="fundo_ornamento">
         <div class="ornamento1"></div>
@@ -81,7 +100,7 @@
                     style="background-image: url('https://img.youtube.com/vi/yT-GgOhpvgw/hqdefault.jpg');"
                     onclick="window.open('https://www.youtube.com/watch?v=yT-GgOhpvgw', '_blank')">></div>
                 <div class="info_info">
-                    <h1 class="poppins-regular1">Culto das premíssias</h1>
+                    <h1 class="poppins-regular" id="p1">Culto das premíssias</h1>
                     <p class="poppins-regular6">Este vídeo compartilha momentos inspiradores de um culto evangélico, trazendo mensagens de fé, esperança e a palavra de Deus para fortalecer a alma e orientar o caminhar espiritual.</p>
                 </div>
             </div>
@@ -91,7 +110,7 @@
                     style="background-image: url('https://img.youtube.com/vi/fU6DEiowZfo/hqdefault.jpg');"
                     onclick="window.open('https://www.youtube.com/watch?v=fU6DEiowZfo', '_blank')">></div>
                     <div class="info_info">
-                        <h1 class="poppins-regular1">Culto das premíssias</h1>
+                        <h1 class="poppins-regular" id="p1">Culto das premíssias</h1>
                         <p class="poppins-regular6">Este vídeo compartilha momentos inspiradores de um culto evangélico, trazendo mensagens de fé, esperança e a palavra de Deus para fortalecer a alma e orientar o caminhar espiritual.</p>
                     </div>
             </div>
@@ -101,7 +120,7 @@
                     style="background-image: url('https://img.youtube.com/vi/Xig9P7Z3o6k/hqdefault.jpg');"
                     onclick="window.open('https://www.youtube.com/watch?v=Xig9P7Z3o6k', '_blank')">></div>
                     <div class="info_info">
-                        <h1 class="poppins-regular1">Culto das premíssias</h1>
+                        <h1 class="poppins-regular" id="p1">Culto das premíssias</h1>
                         <p class="poppins-regular6">Este vídeo compartilha momentos inspiradores de um culto evangélico, trazendo mensagens de fé, esperança e a palavra de Deus para fortalecer a alma e orientar o caminhar espiritual.</p>
                     </div>
             </div>
@@ -131,6 +150,20 @@
         </section> -->
         
     </section>
+    <div class="gallery-container">
+        <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+        
+        <div class="gallery">
+            <img src="./img/g1.jpeg" alt="Imagem 1" class="gallery-item">
+            <img src="./img/g2.jpeg" alt="Imagem 2" class="gallery-item">
+            <img src="./img/g3.jpeg" alt="Imagem 3" class="gallery-item">
+            <img src="./img/g4.jpeg" alt="Imagem 1" class="gallery-item">
+            <img src="./img/g5.jpeg" alt="Imagem 2" class="gallery-item">
+            <img src="./img/g6.jpeg" alt="Imagem 3" class="gallery-item">
+        </div>
+
+        <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
     <section class="fundo_mapa">
         <div class="ornamento1"></div>
         <div class="ornamento2">
@@ -145,4 +178,9 @@
     
     
 </body>
+<script src="script.js"></script>
+<script src="Foto_Roleta.js"></script> 
+<footer>
+    <div class="footer"></div>
+</footer>
 </html>
