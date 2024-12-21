@@ -63,6 +63,15 @@
 
     
 }
+.poppins-regular7 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    
+}
 /* Header */
 
 header{
@@ -70,7 +79,7 @@ header{
     position: fixed;
     height: 100px;
     width: 100vw;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(216, 241, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,41 +187,18 @@ body{
         linear-gradient(to top, rgba(0, 0, 0, 0.6)20%, rgba(0, 0, 0, 0)), /* Degradê */
         url(./sky.jpg);
 }
-.parallax2{
-    display: flex;
-    width: 100vw;
-    height: 600px;
-    background-image: 
-        linear-gradient(to top, rgba(0, 0, 0, 0.6)100%, rgba(0, 0, 0, 0)), /* Degradê */
-        url(./trigo2.jpg);
-    /* background-image: url(./trigo2.jpg); */
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
+
 .defaut{
-    display:flex;
-    width: 100vw;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    
-}
-.defaut2{
     display:flex;
     width: 100vw;
     height: 450px;
     background-color: rgb(255, 255, 255);
-    align-items: center;
+   /*  align-items: center; */
     justify-content: center;
     gap: 20px;
     
 }
+
 .info1{
     align-items: center;
     justify-content: center;
@@ -229,21 +215,15 @@ body{
 }
 .foto1{
     height: 300px;
-    width: 30vw;
+    width: 300px;
     background-image: url(./FOTO2.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px;
     
 }
-.foto2{
-    height: 300px;
-    width: 30vw;
-    background-image: url(./foto3.jpeg);
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px;
-}
+
 .face{
     position: absolute;
     right: 355px;
@@ -267,19 +247,10 @@ body{
 .box_info{
     width: 340px;
     height: 400px;
-    background-color: rgb(22, 105, 131);
+    background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 2px 2px 1px;
     border-radius: 5px;
     
-}
-.titulo_culto{
-    padding-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 20px;
-    background-color: white;
 }
 .video-thumbnail{
     width: 320px; 
@@ -297,5 +268,178 @@ body{
     width: 320px;
     height: 180px;
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
     
+}
+.fundo_ornamento{
+    padding-top: 50px;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    background-color: white;
+    gap: 20px;
+
+}
+.ornamento1{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url(./ornamento.png);
+    background-size: cover;
+   
+}
+.ornamento2{
+    width: 90vw;
+    height: 100px;
+    background-size: cover;
+}
+.parallax2{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 350px 600px;
+    /* grid-template-columns: 35vw 1fr; */
+    background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0.6)100%, rgba(0, 0, 0, 0)),
+        url(./bk-biblia.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fundo_ornamento1{
+    padding-top: 50px;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    grid-column: 1 / 3; 
+    grid-row: 1; 
+    
+}
+.info2{
+    height: 300px;
+    width: 50vw;
+    grid-column: 2; 
+    grid-row: 2; 
+    margin-right: 8vw;
+    
+}
+
+.foto2{
+    height: 300px;
+    width: 300px;
+    background-image: url(./culto.png);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    grid-column: 1; 
+    grid-row: 2; 
+    margin-left: 9vw;
+    margin-top: 0px;
+    
+}
+.defaut2{
+    display:flex;
+    width: 100vw;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 1 / 3; 
+    grid-row: 3; 
+    
+}
+/* Eventos */
+.foto_evento1{
+    height: 300px;
+    width: 100%;
+    background-image: url(./evento3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    /* transform:rotate(-5deg); */
+    grid-column: 2 / 5; 
+    grid-row: 1; 
+    margin: 10px;
+    
+    
+}
+.foto_evento2{
+    height: 300px;
+    width: 100%;
+    /* background-image: url(./evento2.jpeg); */
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    grid-column: 2 / 5; 
+    grid-row: 4; 
+    
+    
+}
+.foto_evento3{
+    height: 300px;
+    width: 100%;
+    background-image: url(./evento2.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    grid-column: 2/5; 
+    grid-row: 7; 
+    margin: 10px;
+    
+    
+}
+.info_evento1{
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    grid-column: 2 / 5; 
+    grid-row: 2; 
+    
+}
+.info_evento2{
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    grid-column: 2 / 5; 
+    grid-row: 5; 
+    
+}
+.info_evento3{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-column: 2 / 5; 
+    grid-row: 8; 
+    
+}
+.defaut_evento{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 320px 50px 100px 320px 50px 100px 320px 50px;
+    width: 100vw;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+   
+    
+}
+.fundo_mapa{
+    padding-top: 50px;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    background-color: white;
+    gap: 20px;
+
 }
