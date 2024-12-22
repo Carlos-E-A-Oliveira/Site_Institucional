@@ -4,7 +4,6 @@ const slides = document.querySelectorAll('.gallery-item');
 const totalSlides = slides.length;
 
 function moveSlide(direction) {
-    // Atualiza o índice
     currentIndex += direction;
 
     // Faz o looping quando chega na última ou primeira imagem
