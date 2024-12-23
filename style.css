@@ -89,6 +89,9 @@ header{
     padding: 5px;
     margin-left: 40px;
 }
+.container11{
+    display: none;
+}
 .container2{
     width:100% ;
     height: 100px;
@@ -241,6 +244,9 @@ header{
 .insta:hover{
     transform: scale(1.1);
     
+}
+.menu_hamburguer{
+    display: none;
 }
 body{
     background-color: white;
@@ -666,6 +672,44 @@ body{
     grid-row: 2; 
 }
 
-/* #celular1{
-    margin-left: 70vw;
-} */
+
+/* TABLET */
+@media screen and (max-width: 1090px) 
+{
+    .container2{
+        display: none;
+    }
+    .container11{
+        display: inline;
+        width: 50vw;
+    }
+    .box_logo{
+        display: none;
+    }
+    .title{
+        grid-template-columns: 0px 20vw 50px 50px 1fr; 
+        grid-template-rows: 50px 300px;
+        
+    }
+    .box_text{
+        
+        grid-row: 2;
+    }
+    .face, .youtube, .insta{
+        margin-top: 100px;
+        grid-row: 1;
+    }
+    .poppins-regular4#versiculo{
+        font-size: 20px;
+    }
+    .menu_hamburguer{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        background-image: url(./img/hunburguer.jpg);
+        background-size: cover;
+        margin-right: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
