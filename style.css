@@ -864,6 +864,6 @@ body{
         display: none;
     }
     .google_maps {
-        max-width: 500px;
+        max-width: 100vw;
     }
 }
