@@ -865,5 +865,6 @@ body{
     }
     .google_maps {
         max-width: 100vw;
+        overflow-x: none;
     }
 }
