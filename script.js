@@ -1,12 +1,16 @@
 async function buscarVersiculoAleatorio() {
     try {
-      const versiculos = [
+      /* const versiculos = [
         "João 3:16",
         "Salmo 23:1",
         "Filipenses 4:13",
         "1 Coríntios 13:4",
         "Mateus 5:3",
         "1 Samuel 2:21"
+      ]; */
+      const versiculos = [
+        "Salmos 126:3",
+        "Salmos 126:3"
       ];
   
       const versiculoAleatorio = versiculos[Math.floor(Math.random() * versiculos.length)];
@@ -30,7 +34,7 @@ async function buscarVersiculoAleatorio() {
       console.log("Versículo Aleatório:", versiculo);
   
       const elementoVersiculo = document.getElementById("versiculo");
-      if (elementoVersiculo) {
+      if (elementoVersiculo) {  // O objetivo do if é verificar se o elemento de ID=versiculo existe na estrutura HTML
         elementoVersiculo.innerText = versiculo;
       }
   

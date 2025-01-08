@@ -181,7 +181,7 @@ header{
     grid-row: 1/2;
     margin-top: 0px;
 }
-.poppins-regular4#versiculo{
+#versiculo{
     font-size: 30px;
 }
 .face{
@@ -280,7 +280,6 @@ body{
         linear-gradient(to top, rgba(0, 0, 0, 0.6)20%, rgba(0, 0, 0, 0)), /* Degradê */
         url(./img/sky.jpg);
 }
-
 .defaut{
     display:flex;
     width: 100vw;
@@ -295,9 +294,11 @@ body{
 .info1{
     align-items: center;
     justify-content: center;
+    text-align: justify;
     height: 250px;
     width: 50vw;
-    gap: 30px;
+    
+   
 }
 .info2{
     align-items: center;
@@ -316,8 +317,56 @@ body{
     box-shadow: 2px 2px 5px;
     
 }
-
-
+.MVV{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 380px;
+    width: 100vw;
+    margin-bottom: 60px;
+    background-color: white;
+    
+}
+.Missao, .Visao, .Valores{
+    height: 350px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: start;
+    padding: 20px;
+    
+}
+.Missao{
+    background-color: #277d97;
+}
+.Visao{
+    background-color: #ce9324;
+}
+.Valores{
+    background-color: #ce4c24;
+}
+.Micone, .Vicone, .VVicone{
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    grid-column: 1; 
+    grid-row: 1; 
+    filter: brightness(0) invert(1);
+}
+.Micone{
+    background-image: url(./img/missao.png);
+}
+.Vicone{
+    background-image: url(./img/visao.png);
+}
+.VVicone{
+    background-image: url(./img/valores.png);
+}
+#centralizado{
+    text-align: justify;
+}
 .box_info{
     width: 340px;
     height: 400px;
@@ -656,6 +705,31 @@ body{
     background-image: url(./img/qrcode.png);
     background-size: cover;
 }
+.copiacola{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    background-color: #071225;
+    grid-column: 2; 
+    grid-row: 2;
+    justify-self: start;
+    border-radius: 8px;
+    transform: translateX(-130px);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.copiacola:hover{
+    background-color: #1b458b;
+}
+.cc{
+    background-image: url(./img/cc.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
 .celular{
     height: 300px;
     width: 250px;
@@ -688,26 +762,52 @@ body{
     }
     .container11{
         display: inline;
-        width: 50vw;
+        width: 40vw;
     }
     .box_logo{
         display: none;
     }
     .title{
-        grid-template-columns: 0px 20vw 50px 50px 1fr; 
+        grid-template-columns: 1fr; 
         grid-template-rows: 50px 300px;
+        justify-items: center;
+        align-items: center;
+        margin: 40px;
+        
         
     }
     .box_text{
-        
+        width: 80vw;
+        grid-column: 1;
         grid-row: 2;
+        
     }
     .face, .youtube, .insta{
+        grid-column: 1;
         margin-top: 100px;
         grid-row: 1;
+        justify-self: start;
+        margin-left: 60px;
     }
-    .poppins-regular4#versiculo{
+    .face{
+        transform: translate();
+    }
+    .youtube{
+        transform: translate(80px);
+    }
+    .insta{
+        transform: translate(160px);
+    }
+    #versiculo{
         font-size: 20px;
+    }
+    .container1{
+        gap: 10px;
+        margin: none;
+        padding: none;
+    }
+    .bordaLogo{
+        transform: translateX(-20px)
     }
     .menu_hamburguer{
         display: flex;
@@ -715,7 +815,7 @@ body{
         width: 50px;
         background-image: url(./img/hunburguer.jpg);
         background-size: cover;
-        margin-right: 20px;
+        margin-right: 40px;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -866,5 +966,11 @@ body{
     .google_maps {
         max-width: 100vw;
         overflow-x: none;
+    }
+    .youtube:hover, .face:hover, .youtube:hover{
+        transform: scale(1.5);
+        transition: none;
+        cursor:none;
+        
     }
 }
