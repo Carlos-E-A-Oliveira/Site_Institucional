@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="icon" href="./img/logo2.png">
     <title>Igreja Evangelica Semear</title>
 </head>
@@ -22,22 +23,22 @@
     </div>
     <div class="menu_hamburguer"></div>
     <div class="container2">
-        <div class="button_menu">
+        <div class="button_menu" onclick="home(0)">
             <p class="poppins-regular" id="menu">Home</p>
         </div>
-        <div class="button_menu">
+        <div class="button_menu" onclick="nos('ynos')">
             <p class="poppins-regular" id="menu">Sobre Nós</p>
         </div>
-        <div class="button_menu">
+        <div class="button_menu" onclick="culto('yculto')">
             <p class="poppins-regular" id="menu">Cultos</p>
         </div>
-        <div class="button_menu">
+        <div class="button_menu" onclick="evento('yevento')">
             <p class="poppins-regular" id="menu">Eventos</p>
         </div>
-        <div class="button_menu">
+        <div class="button_menu" onclick="galeria('ygaleria')">
             <p class="poppins-regular" id="menu">Galeria</p>
         </div>
-        <div class="button_menu">
+        <div class="button_menu" onclick="doacao('ydoacao')">
             <p class="poppins-regular" id="menu">Doações</p>
         </div>
         <div class="oracao"  id="menu">
@@ -69,8 +70,8 @@
             <div class="insta"></div>
         </section>
     </section>
-    <section class="fundo_ornamento">
-        <div class="ornamento1"></div>
+    <section class="fundo_ornamento" id="ynos">
+        <div class="ornamento1" ></div>
         <div class="ornamento2">
             <h1 class="poppins-regular5">Sobre Nós</h1>
         </div>
@@ -87,12 +88,14 @@
     </section>
     <section class="MVV">
         <div class="Missao">
+            <p class="poppins-regular4" ID="start_text1">MISSÃO</p>
             <div class="Micone"></div>
             <section>
                 <p class="poppins-regular4" id="centralizado">Ser testemunha de Jesus Cristo em santidade e poder de Deus.</p>
             </section>
         </div>
         <div class="Visao">
+            <p class="poppins-regular4" ID="start_text2">VISÃO</p>
             <div class="Vicone"></div>
             <section>
                 <p class="poppins-regular4" id="centralizado">Levar as pessoas a conhecer Jesus e receber a salvação pela graça.
@@ -102,6 +105,7 @@
             </section>
         </div>
         <div class="Valores">
+            <p class="poppins-regular4" ID="start_text3">VALORES</p>
             <div class="VVicone"></div>
             <section>
                 <p class="poppins-regular4" id="centralizado">Regra de ensinamento da Bíblia como base da Fé.
@@ -112,7 +116,7 @@
         </div>
     </section>
     <section class="parallax2">
-        <section class="fundo_ornamento1">
+        <section class="fundo_ornamento1" id="yculto">
             <div class="ornamento1"></div>
             <div class="ornamento2">
                 <h1 class="poppins-regular7">Cultos</h1>
@@ -121,9 +125,10 @@
         
         <section class="foto2"></section>
         <section class="info2">
-            <p class="poppins-regular4">Este é um teste para texto, o objetivo deste texto é verificar tamanho, formato e clareza na informação. Tudo que é escrito aqui refere-se á foto ao lado.</p>
-            <p class="poppins-regular4">Este é um teste para texto, o objetivo deste texto é verificar tamanho, formato e clareza na informação. Tudo que é escrito aqui refere-se á foto ao lado.</p>
-            <p class="poppins-regular4">Este é um teste para texto, o objetivo deste texto é verificar tamanho, formato e clareza na informação. Tudo que é escrito aqui refere-se á foto ao lado.</p>
+            <h1 class="poppins-regular7" id="instr">Culto na Comunidade Evangélica Semear Bauru</h1>
+            <p class="poppins-regular4">Convidamos você e sua família para participar do nosso culto evangélico na Comunidade Evangélica Semear Bauru.</p>
+            <p class="poppins-regular4">O culto é uma oportunidade de enriquecer a alma, fortalecer a fé e se conectar ainda mais com a presença de Deus. Através da Palavra, louvores e oração, você encontrará conforto, direção e renovação espiritual para sua vida.</p>
+            <p class="poppins-regular4">Nossa igreja está de braços abertos esperando por você. Venha fazer parte deste momento de adoração e comunhão com Deus!</p>
         </section>
         <section class="foto2_2"></section>
         <section class="defaut2">
@@ -133,8 +138,8 @@
                     style="background-image: url('https://img.youtube.com/vi/yT-GgOhpvgw/hqdefault.jpg');"
                     onclick="window.open('https://www.youtube.com/watch?v=yT-GgOhpvgw', '_blank')">></div>
                 <div class="info_info">
-                    <h1 class="poppins-regular" id="p1">Culto das premíssias</h1>
-                    <p class="poppins-regular6">Este vídeo compartilha momentos inspiradores de um culto evangélico, trazendo mensagens de fé, esperança e a palavra de Deus para fortalecer a alma e orientar o caminhar espiritual.</p>
+                    <h1 class="poppins-regular" id="p1">Momento de Adoração</h1>
+                    <p class="poppins-regular6">João 4: 23 Mas a hora vem, e agora é, em que os verdadeiros adoradores adorarão o Pai em espírito e em verdade; porque o Pai procura a tais que assim o adorem.</p>
                 </div>
             </div>
             <div class="box_info">
@@ -143,8 +148,8 @@
                     style="background-image: url('https://img.youtube.com/vi/fU6DEiowZfo/hqdefault.jpg');"
                     onclick="window.open('https://www.youtube.com/watch?v=fU6DEiowZfo', '_blank')">></div>
                     <div class="info_info">
-                        <h1 class="poppins-regular" id="p1">Culto das premíssias</h1>
-                        <p class="poppins-regular6">Este vídeo compartilha momentos inspiradores de um culto evangélico, trazendo mensagens de fé, esperança e a palavra de Deus para fortalecer a alma e orientar o caminhar espiritual.</p>
+                        <h1 class="poppins-regular" id="p1">Ministração da Palavra de Deus</h1>
+                        <p class="poppins-regular6">João 15: 7 Se vós estiverdes em mim, e as minhas palavras estiverem em vós, pedireis tudo o que quiserdes, e vos será feito.</p>
                     </div>
             </div>
             <div class="box_info">
@@ -153,14 +158,14 @@
                     style="background-image: url('https://img.youtube.com/vi/Xig9P7Z3o6k/hqdefault.jpg');"
                     onclick="window.open('https://www.youtube.com/watch?v=Xig9P7Z3o6k', '_blank')">></div>
                     <div class="info_info">
-                        <h1 class="poppins-regular" id="p1">Culto das premíssias</h1>
-                        <p class="poppins-regular6">Este vídeo compartilha momentos inspiradores de um culto evangélico, trazendo mensagens de fé, esperança e a palavra de Deus para fortalecer a alma e orientar o caminhar espiritual.</p>
+                        <h1 class="poppins-regular" id="p1">Oração para libertação, curas, revelação e profecias</h1>
+                        <p class="poppins-regular6">Lucas 9: 1 Reunindo os Doze, Jesus deu-lhes poder e autoridade para expulsar todos os demônios e curar doenças.</p>
                     </div>
             </div>
         </section>
         
     </section>
-    <section class="fundo_ornamento">
+    <section class="fundo_ornamento" id="yevento">
         <div class="ornamento1"></div>
         <div class="ornamento2">
             <h1 class="poppins-regular5">Eventos</h1>
@@ -169,29 +174,38 @@
     <section class="defaut_evento">
         <section class="foto_evento1"></section>
         <section class="info_evento1">
-            <p class="poppins-regular">Este é um teste para texto, o objetivo deste texto é verificar tamanho, formato e clareza na informação. Tudo que é escrito aqui refere-se á foto ao lado.</p>
-            <p class="poppins-regular">Este é um teste para texto, o objetivo deste texto é verificar tamanho, formato e clareza na informação. Tudo que é escrito aqui refere-se á foto ao lado.</p>
-        
+            <!-- <h1 class="poppins-regular">Os eventos são realizados e anunciados com antecedência no site e nas redes sociais.</h1> -->
+            <!-- <p class="poppins-regular">Convidamos você e sua família para participar do nosso culto evangélico na Comunidade Evangélica Semear Bauru. O culto é uma oportunidade de enriquecer a alma, fortalecer a fé e se conectar ainda mais com a presença de Deus. Através da Palavra, louvores e oração, você encontrará conforto, direção e renovação espiritual para sua vida.</p>
+            <p class="poppins-regular">Nossa igreja está de braços abertos esperando por você. Venha fazer parte deste momento de adoração e comunhão com Deus!</p>
+         -->
         </section>
     </section>
-    <div class="gallery-container">
-        <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
-        
-        <div class="gallery">
-            <img src="./img/g1.jpg" alt="Imagem 1" class="gallery-item">
-            <img src="./img/g2.jpg" alt="Imagem 2" class="gallery-item">
-            <img src="./img/g3.jpeg" alt="Imagem 3" class="gallery-item">
-            <img src="./img/g4.jpeg" alt="Imagem 1" class="gallery-item">
-            <img src="./img/g5.jpeg" alt="Imagem 2" class="gallery-item">
-            <img src="./img/g6.jpeg" alt="Imagem 3" class="gallery-item">
-        </div>
+    <section class="parallax4">
+        <section class="fundo_ornamento1" id="ygaleria">
+            <div class="ornamento1"></div>
+            <div class="ornamento2">
+                <h1 class="poppins-regular5">Galeria</h1>
+            </div>
+        </section>
+        <div class="gallery-container">
+            <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+            
+            <div class="gallery">
+                <img src="./img/g1.jpg" alt="Imagem 1" class="gallery-item">
+                <img src="./img/g2.jpg" alt="Imagem 2" class="gallery-item">
+                <img src="./img/g3.jpeg" alt="Imagem 3" class="gallery-item">
+                <img src="./img/g4.jpeg" alt="Imagem 1" class="gallery-item">
+                <img src="./img/g5.jpeg" alt="Imagem 2" class="gallery-item">
+                <img src="./img/g6.jpeg" alt="Imagem 3" class="gallery-item">
+            </div>
 
-        <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-    <div class="margem"></div>
+            <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="margem"></div>
+    </section>
     <!-- Doacao -->
     <section class="parallax3">
-        <section class="fundo_ornamento1">
+        <section class="fundo_ornamento1" id="yoferta">
             <div class="ornamento1"></div>
             <div class="ornamento2">
                 <h1 class="poppins-regular7">Dízimos, Ofertas e Doações</h1>
@@ -203,9 +217,12 @@
                 <div class="foto_banco"></div>
                 <div class="info_banco">
                     <h1 class="poppins-regular">Banco do Brasil</h1>
-                    <p>Agência: 9999999</p>
-                    <p>Conta Corrente: 99999-9</p>
+                    <p class="poppins-regular6">Comunidade Evangélica Semear Bauru</p>
+                    <p class="poppins-regular6">Agência 6853-5</p>
+                    <p class="poppins-regular6">Conta Corrente: 30026-8</p>
+                    <p class="poppins-regular6">Pix CNPJ 22840215000153</p>
                 </div>
+                <div class="qrinst"></div>
             </div>
             <div class="pix">
                 <h1 class="poppins-regular" id="p2">PIX</h1>
@@ -214,7 +231,14 @@
                     <div class="cc"></div>
                     <p class="poppins-regular4">Clique para copiar QR CODE</p>
                 </button>
-                <div class="celular" id="celular1"></div>
+                <div class="qrinst">
+                    <h1 class="poppins-regular" id="instr">Instruções para Pagamento com QR Code</h1>
+                    <p class="poppins-regular6">1. Abra o aplicativo do seu banco no celular.</p>
+                    <p class="poppins-regular6">2. Localize a opção "Pagar com QR Code".</p>
+                    <p class="poppins-regular6">3. Aponte a câmera do celular para o QR Code.</p>
+                    <p class="poppins-regular6">4. Confirme os detalhes do pagamento.</p>
+                    <p class="poppins-regular6">5. Finalize o pagamento.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -236,6 +260,7 @@
 <script src="script.js"></script>
 <script src="script1.js"></script>
 <script src="Foto_Roleta.js"></script> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <footer>
     <div class="footer">
         <section class="title_footer">

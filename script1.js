@@ -5,7 +5,20 @@ function copia(){
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(codigo)
             .then(() => {
-                alert("Código copiado: " + codigo);
+
+                Toastify({
+                    text: "Código copiado com sucesso!",
+                    duration: 3000,
+                    close: true,
+                    gravity: "top", 
+                    position: "right", 
+                    stopOnFocus: true, 
+                    style: {
+                      background: "rgb(22, 105, 131)",
+                    },
+                    onClick: function(){} 
+                }).showToast();
+                
             })
             .catch(err => {
                 console.error("Erro ao copiar usando navigator.clipboard: ", err);
@@ -26,7 +39,18 @@ function copia(){
         try {
             const sucesso = document.execCommand("copy");
             if (sucesso) {
-                alert("Código copiado: " + text);
+                Toastify({
+                    text: "Código copiado com sucesso!",
+                    duration: 3000,
+                    close: true,
+                    gravity: "top", 
+                    position: "right", 
+                    stopOnFocus: true, 
+                    style: {
+                      background: "rgb(22, 105, 131)",
+                    },
+                    onClick: function(){} 
+                }).showToast();
             } else {
                 alert("Falha ao copiar o código.");
             }
@@ -36,4 +60,25 @@ function copia(){
         }
         document.body.removeChild(tempInput);
     }
+
+    
 }
+
+function home(yposicao){
+    window.scrollTo({
+        top: yposicao,
+        /* behavior: "smooth" */
+    });
+}
+function nos(ynos){
+    const element = document.getElementById(ynos);
+    
+    if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 60;
+
+        window.scrollTo({
+            top: elementPosition,
+        });
+    }
+}
+
