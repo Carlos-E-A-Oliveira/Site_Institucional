@@ -23,7 +23,7 @@
     </div>
     <div class="menu_hamburguer"></div>
     <div class="container2">
-        <div class="button_menu" onclick="home(0)">
+        <div class="button_menu" onclick="home()">
             <p class="poppins-regular" id="menu">Home</p>
         </div>
         <div class="button_menu" onclick="nos('ynos')">
@@ -38,18 +38,45 @@
         <div class="button_menu" onclick="galeria('ygaleria')">
             <p class="poppins-regular" id="menu">Galeria</p>
         </div>
-        <div class="button_menu" onclick="doacao('ydoacao')">
+        <div class="button_menu" onclick="doacao('yoferta')">
             <p class="poppins-regular" id="menu">Doações</p>
         </div>
-        <div class="oracao"  id="menu">
+        <div class="oracao"  id="menu"  onclick="oracao('ch_oracao')">
             <p class="poppins-regular2">Pedir Oração</p>
         </div>
         
     </div>
     
 </header>
-<body>
-    
+<body id="body">
+    <div class="ped_oracao" id="ch_oracao">
+        <div class="ped_oracao2">
+            <h1 class="poppins-regular5" id="ped_oracao_titulo">Pedido de Oração</h1>
+            <p class="text_oracao" id="ped_oracao_titulo1">Digite seu nome (Opcional):</p>
+            <input type="text" class="ped_oracao_input" id="ch_oracao_input">
+            <div class="ped_oracao_grid">
+                <input type="checkbox" class="ped_oracao_input1" id="ch_oracao_chbx1">
+                <input type="checkbox" class="ped_oracao_input2" id="ch_oracao_chbx2">
+                <input type="checkbox" class="ped_oracao_input3" id="ch_oracao_chbx3">
+                <input type="checkbox" class="ped_oracao_input4" id="ch_oracao_chbx4">
+                <input type="checkbox" class="ped_oracao_input5" id="ch_oracao_chbx5">
+                <input type="checkbox" class="ped_oracao_input6" id="ch_oracao_chbx6">
+                <p class="text_oracao1" id="ch_text_oracao1">Família</p>
+                <p class="text_oracao2" id="ch_text_oracao2">Finanças</p>
+                <p class="text_oracao3" id="ch_text_oracao3">Cura</p>
+                <p class="text_oracao4" id="ch_text_oracao4">Libertação</p>
+                <p class="text_oracao5" id="ch_text_oracao5">Vida Espiritual</p>
+                <p class="text_oracao6" id="ch_text_oracao6">Emprego</p>
+            </div>
+            <p class="text_oracao" id="ped_oracao_titulo2">Outras Areas:</p>
+            <input type="text" class="ped_oracao_input" id="ch_oracao_input2">
+            <p class="text_oracao" id="ped_oracao_titulo3">Relato:</p>
+            <div class="enviar" id="enviar">
+                <textarea name="text_area" class="ped_oracao_input7" id="ch_oracao_input3"></textarea>
+                <button class="botao_enviar" id="botao_enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
     <section class="parallax1">
         <section class="title">
             <div class="box_logo">
@@ -229,7 +256,7 @@
                 <div class="qrcode"></div>
                 <button class="copiacola" onclick="copia()">
                     <div class="cc"></div>
-                    <p class="poppins-regular4">Clique para copiar QR CODE</p>
+                    <p class="poppins-regular4" id="copy_button">Clique para copiar QR CODE</p>
                 </button>
                 <div class="qrinst">
                     <h1 class="poppins-regular" id="instr">Instruções para Pagamento com QR Code</h1>
