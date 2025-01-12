@@ -19,7 +19,11 @@
 #p1 {
     text-align: center;
     width: auto;
-    }
+    color: white;
+}
+#youtube_descr{
+    color: white;
+}
 .poppins-regular2 {
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -165,13 +169,14 @@ header{
 }
 .ped_oracao2{
     margin-top: 25px;
-    display: grid;
+    display: none;
     border-radius: 10px;
     width: 520px;
     height: 500px;
     background-color: aliceblue;
     align-content: center;
     justify-content: center;
+    padding-left: 50px;
     
     
 }
@@ -302,6 +307,9 @@ header{
     justify-content: center;
 }
 /* Body */
+#body{
+    overflow-x: hidden;
+}
 .box_logo{
     margin-top: 50px;
     width: 320px;
@@ -444,8 +452,7 @@ body{
     width: 100vw;
     height: 450px;
     background-color: rgb(255, 255, 255);
-   /*  align-items: center; */
-    justify-content: center;
+   justify-content: center;
     gap: 20px;
     
 }
@@ -493,9 +500,10 @@ body{
     display: grid;
     grid-template-columns: 1fr; 
     grid-template-rows: auto auto;
+    padding: 20px;
     justify-items: center;
     align-items: start;
-    padding: 20px;
+    
     
 }
 .Missao{
@@ -526,7 +534,7 @@ body{
 }
 #centralizado{
     text-align: justify;
-}
+    }
 #start_text1{
     transform: translateY(-50px)translateX(-5px);
 }
@@ -557,7 +565,7 @@ body{
     margin-top: 10px;
     width: 320px;
     height: 180px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     
     
@@ -821,7 +829,7 @@ body{
 /* doacao */
 .parallax3{
     width: 100%;
-    height: 1000px;
+    height: 600px;
     background-image: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.8)20%, rgba(0, 0, 0, 0)), /* Degradê */
         url(./img/blue-gradient-background.jpg);
@@ -844,19 +852,10 @@ body{
     
     
 }
-.pix{
-    margin-top: 20px;
-    grid-column: 2/3; 
-    grid-row: 1;
-    margin-bottom: 20px;
-    }
-.banco{
-    grid-column: 2/3; 
-    grid-row: 2;
-}
+
 .banco, .pix{
     display: grid;
-    grid-template-columns: auto auto auto; 
+    grid-template-columns: auto auto 33vw; 
     grid-template-rows: 50px 300px;
     background-color: white;
     border-radius: 5px;
@@ -866,36 +865,60 @@ body{
     align-items: center;
     
 }
+.pix{
+    margin-top: 20px;
+    grid-column: 2/3; 
+    grid-row: 1;
+    margin-bottom: 20px;
+}
+.banco{
+    grid-column: 2/3; 
+    grid-row: 2;
+    display: none;
+}
 #p2{
-    grid-column: 2;
+    grid-column: 1/2;
     font-size: 30px;
 }
-.qrcode{
-    height: 250px;
-    width: 250px;
+#p4{
+    grid-column: 3;
+    font-size: 30px;
+    
+}
+.box_qr{
     grid-column: 1; 
     grid-row: 2;
-    border: 10px solid black;
+    transform: translateX(-150px);
+}
+.qrcode{
+    height: 200px;
+    width: 200px;
     background-image: url(./img/qrcode.png);
     background-size: cover;
-    margin-left: 100px;
+    
+    
+}
+.qrinst{
+    height: 250px;
+    width: 400px;
+    grid-column: 1; 
+    grid-row: 2;
+    transform: translateX(160px);
+    
+    
 }
 .copiacola{
     display: flex;
-    width: 300px;
+    width: 200px;
     height: 50px;
     background-color: #071225;
-    grid-column: 2; 
-    grid-row: 2;
-    justify-self: start;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: 0.2s;
     box-shadow: 2px 2px 5px;
-    transform: translateX(25px);
-
+    
 }
 .copiacola:hover{
     background-color: #1b458b;
@@ -908,13 +931,19 @@ body{
     height: 30px;
     
 }
-.qrinst{
+
+.foto_banco2{
     height: 250px;
-    width: 450px;
+    width: 330px;
     grid-column: 3; 
     grid-row: 2;
+    background-image: url(./img/foto_banco2.png);
+    background-size: cover;
     
     
+}
+#p5{
+    margin-top: 70px;
 }
 #instr{
     margin-bottom: 20px;
@@ -1106,10 +1135,6 @@ body{
         grid-row: 2; 
         
     }
-    .foto_evento1{
-        width: 80vw;
-        grid-column: 3;
-    }
     .qrinst{
         display: none;
     }
@@ -1160,4 +1185,121 @@ body{
         cursor:none;
         
     }
+    .MVV{
+        display: block;
+        height: 850px;
+        
+    }
+    .Missao, .Visao, .Valores{
+        height: 240px;
+        width: 88vw;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto;
+        padding: 20px;
+        justify-items: center;
+        align-items: start;
+        
+        
+        
+    }
+    .Missao{
+        background-color: #277d97;
+    }
+    .Visao{
+        background-color: #ce9324;
+    }
+    .Valores{
+        background-color: #ce4c24;
+    }
+    .Micone, .Vicone, .VVicone{
+        width: 50px;
+        height: 50px;
+    }
+    #start_text1{
+        margin-top: 40px;
+    }
+    #orn1, #orn2{
+        margin-left: -10px;
+    }
+    #onr2_titulo{
+        font-size: 30px;
+    }
+    .foto_banco2, #p5, #p4{
+        display: none;
+    }
+    .parallax3{
+        height: 1000px;
+    }
+    .banco, .pix{
+        display: block;
+    }
+    #p2{
+        width: 100%;
+        text-align: center;
+    }
+    .box_qr{
+        display: grid;
+        transform: translateX(0px);
+        width: 100%;
+        justify-content: center;
+    }
+    .qrcode{
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    .foto_banco{
+        display: none;
+    }
+    .info_banco{
+        height: 250px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        grid-row: 1; 
+        border: 0px;
+        
+    
+    }
+    #info_bnk{
+        margin: 40px;
+        padding: 0px;
+        grid-row: 2; 
+        border: 0px;
+        height: 20px;
+    }
+    .container1{
+        margin-left: 20px;
+    }
+    #youtube_descr{
+        display: none;
+    
+    }
+    .box_info{
+        display: grid;
+        justify-content: center;
+    }
+    .info_info{
+        height: auto;
+    }
+    .video-thumbnail{
+        margin-top: 10px;
+    }
+    .foto_evento1{
+        height: 50vh;
+        width: 80vw;
+    }
+    .gallery-item{
+        height: auto;
+        width: 90vw;
+        grid-column: 3;
+        transform: translateX(-30px);
+    }
+    .gallery{
+        height: 50vh;
+        width: 90vw;    
+        background-position: bottom;
+    }
+
 }

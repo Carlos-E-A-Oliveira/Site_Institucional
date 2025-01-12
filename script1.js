@@ -161,6 +161,7 @@ function oracao(oracao_element){
     const text_oracao5 = document.getElementById('ch_text_oracao5');
     const text_oracao6 = document.getElementById('ch_text_oracao6');
     const botao_enviar = document.getElementById('botao_enviar');
+    const ped_oracao2 = document.getElementById('ped_oracao_back');
     home();
 
     if (oracao_id) {
@@ -186,6 +187,7 @@ function oracao(oracao_element){
         text_oracao5.style.display = 'flex';
         text_oracao6.style.display = 'flex';
         botao_enviar.style.display = 'flex';
+        ped_oracao2.style.display = 'grid';
     }
     
 }
@@ -213,10 +215,12 @@ function hiddenOracao(){
     const text_oracao5 = document.getElementById('ch_text_oracao5');
     const text_oracao6 = document.getElementById('ch_text_oracao6');
     const botao_enviar = document.getElementById('botao_enviar');
+    const ped_oracao2 = document.getElementById('ped_oracao_back');
 
     if (oracao_id) {
         oracao_id.style.width = '0px';
-        bodyElement.style.overflow = 'auto';
+        bodyElement.style.overflowY = 'auto';
+        bodyElement.style.overflowX = 'hidden';
         ped_oracao_titulo.style.display = 'none';
         ped_oracao_titulo1.style.display = 'none';
         ped_oracao_titulo2.style.display = 'none';
@@ -237,6 +241,8 @@ function hiddenOracao(){
         text_oracao5.style.display = 'none';
         text_oracao6.style.display = 'none';
         botao_enviar.style.display = 'none';
+        ped_oracao2.style.display = 'none';
+        
     }
 }
    

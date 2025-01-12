@@ -50,7 +50,7 @@
 </header>
 <body id="body">
     <div class="ped_oracao" id="ch_oracao">
-        <div class="ped_oracao2">
+        <div class="ped_oracao2" id="ped_oracao_back">
             <h1 class="poppins-regular5" id="ped_oracao_titulo">Pedido de Oração</h1>
             <p class="text_oracao" id="ped_oracao_titulo1">Digite seu nome (Opcional):</p>
             <input type="text" class="ped_oracao_input" id="ch_oracao_input">
@@ -166,7 +166,7 @@
                     onclick="window.open('https://www.youtube.com/watch?v=yT-GgOhpvgw', '_blank')">></div>
                 <div class="info_info">
                     <h1 class="poppins-regular" id="p1">Momento de Adoração</h1>
-                    <p class="poppins-regular6">João 4: 23 Mas a hora vem, e agora é, em que os verdadeiros adoradores adorarão o Pai em espírito e em verdade; porque o Pai procura a tais que assim o adorem.</p>
+                    <p class="poppins-regular6" id="youtube_descr">João 4: 23 Mas a hora vem, e agora é, em que os verdadeiros adoradores adorarão o Pai em espírito e em verdade; porque o Pai procura a tais que assim o adorem.</p>
                 </div>
             </div>
             <div class="box_info">
@@ -176,7 +176,7 @@
                     onclick="window.open('https://www.youtube.com/watch?v=fU6DEiowZfo', '_blank')">></div>
                     <div class="info_info">
                         <h1 class="poppins-regular" id="p1">Ministração da Palavra de Deus</h1>
-                        <p class="poppins-regular6">João 15: 7 Se vós estiverdes em mim, e as minhas palavras estiverem em vós, pedireis tudo o que quiserdes, e vos será feito.</p>
+                        <p class="poppins-regular6" id="youtube_descr">João 15: 7 Se vós estiverdes em mim, e as minhas palavras estiverem em vós, pedireis tudo o que quiserdes, e vos será feito.</p>
                     </div>
             </div>
             <div class="box_info">
@@ -186,7 +186,7 @@
                     onclick="window.open('https://www.youtube.com/watch?v=Xig9P7Z3o6k', '_blank')">></div>
                     <div class="info_info">
                         <h1 class="poppins-regular" id="p1">Oração para libertação, curas, revelação e profecias</h1>
-                        <p class="poppins-regular6">Lucas 9: 1 Reunindo os Doze, Jesus deu-lhes poder e autoridade para expulsar todos os demônios e curar doenças.</p>
+                        <p class="poppins-regular6" id="youtube_descr">Lucas 9: 1 Reunindo os Doze, Jesus deu-lhes poder e autoridade para expulsar todos os demônios e curar doenças.</p>
                     </div>
             </div>
         </section>
@@ -209,7 +209,7 @@
     </section>
     <section class="parallax4">
         <section class="fundo_ornamento1" id="ygaleria">
-            <div class="ornamento1"></div>
+            <div class="ornamento1" id="orn1"></div>
             <div class="ornamento2">
                 <h1 class="poppins-regular5">Galeria</h1>
             </div>
@@ -233,9 +233,9 @@
     <!-- Doacao -->
     <section class="parallax3">
         <section class="fundo_ornamento1" id="yoferta">
-            <div class="ornamento1"></div>
+            <div class="ornamento1" id="orn2"></div>
             <div class="ornamento2">
-                <h1 class="poppins-regular7">Dízimos, Ofertas e Doações</h1>
+                <h1 class="poppins-regular7" id="onr2_titulo">Dízimos, Ofertas e Doações</h1>
             </div>
         </section>
         <div class="doacao">
@@ -244,20 +244,21 @@
                 <div class="foto_banco"></div>
                 <div class="info_banco">
                     <h1 class="poppins-regular">Banco do Brasil</h1>
-                    <p class="poppins-regular6">Comunidade Evangélica Semear Bauru</p>
-                    <p class="poppins-regular6">Agência 6853-5</p>
-                    <p class="poppins-regular6">Conta Corrente: 30026-8</p>
-                    <p class="poppins-regular6">Pix CNPJ 22840215000153</p>
+                    <p class="poppins-regular6" id="info_bnk">Comunidade Evangélica Semear Bauru</p>
+                    <p class="poppins-regular6" id="info_bnk">Agência 6853-5</p>
+                    <p class="poppins-regular6" id="info_bnk">Conta Corrente: 30026-8</p>
                 </div>
                 <div class="qrinst"></div>
             </div>
             <div class="pix">
                 <h1 class="poppins-regular" id="p2">PIX</h1>
-                <div class="qrcode"></div>
-                <button class="copiacola" onclick="copia()">
-                    <div class="cc"></div>
-                    <p class="poppins-regular4" id="copy_button">Clique para copiar QR CODE</p>
-                </button>
+                <div class="box_qr">
+                    <div class="qrcode"></div>
+                    <button class="copiacola" onclick="copia()">
+                        <div class="cc"></div>
+                        <p class="poppins-regular4" id="copy_button">Copiar código</p>
+                    </button>
+                </div>
                 <div class="qrinst">
                     <h1 class="poppins-regular" id="instr">Instruções para Pagamento com QR Code</h1>
                     <p class="poppins-regular6">1. Abra o aplicativo do seu banco no celular.</p>
@@ -265,6 +266,13 @@
                     <p class="poppins-regular6">3. Aponte a câmera do celular para o QR Code.</p>
                     <p class="poppins-regular6">4. Confirme os detalhes do pagamento.</p>
                     <p class="poppins-regular6">5. Finalize o pagamento.</p>
+                </div>
+                <h1 class="poppins-regular" id="p4">Transferência Bancária</h1>
+                <div class="foto_banco2">
+                    <p class="poppins-regular6" id="p5">Comunidade Evangélica Semear Bauru</p>
+                    <p class="poppins-regular6">Agência 6853-5</p>
+                    <p class="poppins-regular6">Conta Corrente: 30026-8</p>
+                    <p class="poppins-regular6">Pix CNPJ 22840215000153</p>
                 </div>
             </div>
         </div>
