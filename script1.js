@@ -244,6 +244,81 @@ function hiddenOracao(){
         ped_oracao2.style.display = 'none';
         
     }
+
+}
+let chk1Verificado = false;
+let chk2Verificado = false;
+let chk3Verificado = false;
+let chk4Verificado = false;
+let chk5Verificado = false;
+let chk6Verificado = false;
+function enviar() {
+    const nome = document.getElementById('ch_oracao_input');
+    const area = document.getElementById('ch_oracao_input2');
+    const relato = document.getElementById('ch_oracao_input3');
+    const chkbx1 = document.getElementById('ch_oracao_chbx1');
+    const chkbx2 = document.getElementById('ch_oracao_chbx2');
+    const chkbx3 = document.getElementById('ch_oracao_chbx3');
+    const chkbx4 = document.getElementById('ch_oracao_chbx4');
+    const chkbx5 = document.getElementById('ch_oracao_chbx5');
+    const chkbx6 = document.getElementById('ch_oracao_chbx6');
+
+    chk1Verificado = chkbx1.checked;
+    chk2Verificado = chkbx2.checked;
+    chk3Verificado = chkbx3.checked;
+    chk4Verificado = chkbx4.checked;
+    chk5Verificado = chkbx5.checked;
+    chk6Verificado = chkbx6.checked;
+    
+    const nomeText = nome.value;
+    const areaText = area.value;
+    const relatoText = relato.value;
+    let textoFinal = `Nome: ${nomeText} // Orar por:${chk1Verificado ? ' - Familia' : ''}${chk2Verificado? ' - Finanças' : ''}${chk3Verificado? ' - Cura' : ''}${chk4Verificado? ' - Libertação' : ''}${chk5Verificado? ' - Vida Espiritual' : ''}${chk6Verificado? ' - Emprego' : ''} - ${areaText} // Relato: ${relatoText}`;
+    const telefoneNum = 5514988070943;
+    const whatsappLink = `https://wa.me/${telefoneNum}?text=${textoFinal}`;
+
+    if(!chkbx1.checked && !chkbx2.checked && !chkbx3.checked && !chkbx4.checked && !chkbx5.checked && !chkbx6.checked && !areaText){
+        Toastify({
+            text: "É necessário preencher uma das áreas!",
+            duration: 3000,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+              background: "rgb(131, 22, 22)",
+            },
+            onClick: function(){} 
+        }).showToast();
+        return;
+    } else if(relatoText === ""){
+        Toastify({
+            text: "É necessário preencher o campo 'Relato'!",
+            duration: 3000,
+            close: true,
+            gravity: "top", 
+            position: "right", 
+            stopOnFocus: true, 
+            style: {
+              background: "rgb(131, 22, 22)",
+            },
+            onClick: function(){} 
+        }).showToast();
+
+    } else {
+        window.open(whatsappLink, '_blank');
+        
+        nome.value = '';
+        area.value = '';
+        relato.value = '';
+
+        chkbx1.checked = false;
+        chkbx2.checked = false;
+        chkbx3.checked = false;
+        chkbx4.checked = false;
+        chkbx5.checked = false;
+        chkbx6.checked = false;
+    }
 }
    
 

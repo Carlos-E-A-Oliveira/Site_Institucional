@@ -973,6 +973,9 @@ body{
 /* TABLET */
 @media screen and (max-width: 1090px) 
 {
+    html, body {
+        overflow-x: hidden; 
+    }
     .container2{
         display: none;
     }
