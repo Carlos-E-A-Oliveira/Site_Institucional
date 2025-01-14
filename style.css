@@ -1290,8 +1290,10 @@ body{
         margin-top: 10px;
     }
     .foto_evento1{
-        height: 50vh;
+        background-size:cover;
+        height: 40vh;
         width: 80vw;
+        background-repeat: no-repeat;
     }
     .gallery-item{
         height: auto;
