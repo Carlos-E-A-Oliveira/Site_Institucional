@@ -1,0 +1,378 @@
+/* TABLET */
+@media screen and (max-width: 1090px) 
+{
+    html, body {
+        overflow-x: hidden; 
+        overflow-y:auto;
+    }
+    .container2{
+        display: none;
+    }
+    .container11{
+        display: inline;
+        width: 42vw;
+    }
+    .box_logo{
+        display: none;
+    }
+    .title{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 50px 300px;
+        justify-items: center;
+        align-items: center;
+        margin: 40px;
+        
+        
+    }
+    .box_text{
+        width: 80vw;
+        grid-column: 1;
+        grid-row: 2;
+        
+    }
+    .face, .youtube, .insta{
+        grid-column: 1;
+        margin-top: 100px;
+        grid-row: 1;
+        justify-self: start;
+        margin-left: 60px;
+    }
+    .face{
+        transform: translate();
+    }
+    .youtube{
+        transform: translate(80px);
+    }
+    .insta{
+        transform: translate(160px);
+    }
+    #versiculo{
+        font-size: 20px;
+    }
+    .container1{
+        gap: 10px;
+        margin: none;
+        padding: none;
+    }
+    .bordaLogo{
+        transform: translateX(-20px)
+    }
+    .menu_hamburguer{
+        display: flex;
+        height: 50px;
+        width: 50px;
+        background-image: url(./img/hunburguer.jpg);
+        background-size: cover;
+        margin-left: 5px;
+        margin-right: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .defaut{
+        display:inline;
+        height: auto;
+    }
+    .info1{
+        margin: 20px;
+        height:auto;
+        width: auto;
+        text-align: justify;
+        
+    }
+    .foto1{
+        
+        width: 80vw;
+        margin-left: 10vw;
+        margin-bottom: 40px;
+    }
+    
+    .parallax2{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto;
+        background-image: 
+            linear-gradient(to top, rgba(0, 0, 0, 0.6)100%, rgba(0, 0, 0, 0)),
+            url(./img/bk-biblia.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        
+    }
+    .foto2_2{
+        display: block;
+        height: 300px;
+        width: 80vw;
+        margin-left: 14vw;
+        margin-bottom: 40px;
+        background-image: url(./img/culto.png);
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px;
+        grid-column: 1; 
+        grid-row: 3; 
+        
+        
+    }
+    .info2{
+        grid-column: 1; 
+        grid-row: 2; 
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 20px;
+        height:auto;
+        width: auto;
+        text-align: justify;
+    }
+    .defaut2{
+        display:inline;
+        width: 100vw;
+        height: auto;
+        padding: 40px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        grid-column: 1; 
+        grid-row: 4; 
+        
+    }
+    .box_info{
+        display: flex;
+        height: auto;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .fundo_ornamento1{
+        margin-left: 30px;
+    }
+    .poppins-regular6{
+        height: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .defaut_evento{
+        grid-template-columns: 20px auto auto auto 20px; 
+        height: 500px;
+    }
+    .info_evento1{
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        grid-column: 2 / 5; 
+        grid-row: 2; 
+        
+    }
+    .foto_evento1{
+        background-size:cover;
+        height: 60vh;
+        width: 70vw;
+        background-repeat: no-repeat;
+    }
+    .qrinst{
+        display: none;
+    }
+    
+    .pix,.banco{
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-content: center;
+        width: 90vw;
+    }
+    #p2{
+        /* margin-right: 50vw; */
+        grid-column: 2; 
+        grid-row: 1; 
+        
+    }
+    .foto_banco{
+        margin-left: 150px;
+        width: 70px;
+        height: 70px;
+        grid-column: 1; 
+        grid-row: 1;
+        border-radius: 5px;
+    }
+    .qrcode{
+        transform: none;
+        grid-column: 2; 
+        grid-row: 2; 
+        
+    }
+    .fundo_mapa{
+        height: 200px;
+    }
+    #p3{
+        display: none;
+    }
+    .google_maps {
+        max-width: 100vw;
+        overflow-x: none;
+    }
+    .youtube:hover, .face:hover, .youtube:hover{
+        transform: scale(1.5);
+        transition: none;
+        cursor:none;
+        
+    }
+    .MVV{
+        display: block;
+        height: 850px;
+        
+    }
+    .Missao, .Visao, .Valores{
+        height: 260px;
+        width: 88vw;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto;
+        padding: 20px;
+        justify-items: center;
+        align-items: start;
+        
+        
+        
+    }
+    .Missao{
+        background-color: #277d97;
+    }
+    .Visao{
+        background-color: #ce9324;
+    }
+    .Valores{
+        background-color: #ce4c24;
+    }
+    .Micone, .Vicone, .VVicone{
+        width: 50px;
+        height: 50px;
+    }
+    #start_text1{
+        margin-top: 40px;
+    }
+    #orn1, #orn2{
+        margin-left: -10px;
+    }
+    #onr2_titulo{
+        font-size: 30px;
+    }
+    .foto_banco2, #p5, #p4{
+        display: none;
+    }
+    .parallax3{
+        height: 1000px;
+    }
+    .banco, .pix{
+        display: block;
+    }
+    #p2{
+        width: 100%;
+        text-align: center;
+    }
+    .box_qr{
+        display: grid;
+        transform: translateX(0px);
+        width: 100%;
+        justify-content: center;
+    }
+    .qrcode{
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    .foto_banco{
+        display: none;
+    }
+    .info_banco{
+        height: 250px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        grid-row: 1; 
+        border: 0px;
+        
+    
+    }
+    #info_bnk{
+        margin: 40px;
+        padding: 0px;
+        grid-row: 2; 
+        border: 0px;
+        height: 20px;
+    }
+    .container1{
+        margin-left: 20px;
+    }
+    #youtube_descr{
+        display: none;
+    
+    }
+    .box_info{
+        display: grid;
+        justify-content: center;
+    }
+    .info_info{
+        height: auto;
+    }
+    .video-thumbnail{
+        margin-top: 10px;
+    }
+    
+    .gallery-item{
+        height: auto;
+        width: 90vw;
+        grid-column: 3;
+        transform: translateX(-30px);
+    }
+    .gallery{
+        height: 50vh;
+        width: 90vw;    
+        background-position: bottom;
+    }
+    .menu_mobile{
+        z-index: 100;
+        position:absolute;
+        margin-top: 100px;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    .button_menu{
+        margin: 0px;
+        margin: 15px;
+    }
+    .oracao{
+        margin: 0px;
+        
+    }
+}
+
+@media screen and (max-width: 455px){
+    .foto_evento1{
+        background-image: url(./img/evento_cel.jpg);
+        height: 32vh;
+        width: 80vw;
+        background-position: center;
+
+    }   
+    .defaut_evento{
+        height: 300px;
+    } 
+    .foto2_2{
+        transform: translateX(30px);
+    }
+    .google_maps {
+        max-width: 450px;
+       
+    }
+} 

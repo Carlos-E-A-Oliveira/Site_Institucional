@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
@@ -21,27 +22,27 @@
     <div class="container11">
         <h1 class="poppins-regular">Igreja Evangélica Semear de Bauru</h1>
     </div>
-    <div class="menu_hamburguer"></div>
+    <div class="menu_hamburguer"onclick="menu_ham_click()"></div>
     <div class="container2">
         <div class="button_menu" onclick="home()">
-            <p class="poppins-regular" id="menu">Home</p>
+            <p class="poppins-regular">Home</p>
         </div>
         <div class="button_menu" onclick="nos('ynos')">
-            <p class="poppins-regular" id="menu">Sobre Nós</p>
+            <p class="poppins-regular">Sobre Nós</p>
         </div>
         <div class="button_menu" onclick="culto('yculto')">
-            <p class="poppins-regular" id="menu">Cultos</p>
+            <p class="poppins-regular">Cultos</p>
         </div>
         <div class="button_menu" onclick="evento('yevento')">
-            <p class="poppins-regular" id="menu">Eventos</p>
+            <p class="poppins-regular">Eventos</p>
         </div>
         <div class="button_menu" onclick="galeria('ygaleria')">
-            <p class="poppins-regular" id="menu">Galeria</p>
+            <p class="poppins-regular">Galeria</p>
         </div>
         <div class="button_menu" onclick="doacao('yoferta')">
-            <p class="poppins-regular" id="menu">Doações</p>
+            <p class="poppins-regular">Doações</p>
         </div>
-        <div class="oracao"  id="menu"  onclick="oracao('ch_oracao')">
+        <div class="oracao" onclick="oracao('ch_oracao')">
             <p class="poppins-regular2">Pedir Oração</p>
         </div>
         
@@ -77,217 +78,241 @@
             </div>
         </div>
     </div>
-    <section class="parallax1">
-        <section class="title">
-            <div class="box_logo">
-                <div class="logo2"></div>
-            </div>
-            <div class="box_text">
-                <p class="poppins-regular4" id="versiculo">Carregando...</p>
-                <!-- <p class="poppins-regular4" id="mensagem">Carregando...</p> -->
-            </div>
-            <div 
-                class="face"
-                onclick="window.open('https://www.facebook.com/comunidade.evangelica.semear.bauru/?locale=pt_BR', '_blank')">
-            </div>
-            <div 
-                class="youtube"
-                onclick="window.open('https://www.youtube.com/@comunidadeevangelicasemear9632', '_blank')">
-            </div>
-            <div class="insta"></div>
-        </section>
-    </section>
-    <section class="fundo_ornamento" id="ynos">
-        <div class="ornamento1" ></div>
-        <div class="ornamento2">
-            <h1 class="poppins-regular5">Sobre Nós</h1>
+    <div class="menu_mobile" id="menu_mobile_1">
+        <div class="button_menu" onclick="home()">
+            <p class="poppins-regular">Home</p>
         </div>
-    </section>
-    <section class="defaut">
-        
-        <section class="info1">
-            <p class="poppins-regular">Somos o Pr. Luis Carlos Serrano e a Pra. Fátima Serrano, chamados por Deus para pregar Sua Palavra às nações. Acreditamos firmemente na Bíblia como o porto seguro da nossa fé e na graça de Jesus Cristo como o Salvador da humanidade.</p>
-            <p class="poppins-regular">Em 2015, atendendo ao chamado de Deus, fundamos a Comunidade Evangélica Semear na cidade de Bauru, SP. Nosso primeiro culto aconteceu em 27 de março de 2015, realizado na área de nossa residência. Permanecemos nesse local por 8 meses, até conseguirmos alugar um espaço adequado para acolher melhor as vidas que Deus tem nos confiado.</p>
-            <p class="poppins-regular">Com gratidão, seguimos cumprindo o propósito de semear a Palavra de Deus e alcançar corações para o Reino.</p>
+        <div class="button_menu" onclick="nos('ynos')">
+            <p class="poppins-regular">Sobre Nós</p>
+        </div>
+        <div class="button_menu" onclick="culto('yculto')">
+            <p class="poppins-regular">Cultos</p>
+        </div>
+        <div class="button_menu" onclick="evento('yevento')">
+            <p class="poppins-regular">Eventos</p>
+        </div>
+        <div class="button_menu" onclick="galeria('ygaleria')">
+            <p class="poppins-regular">Galeria</p>
+        </div>
+        <div class="button_menu" onclick="doacao('yoferta')">
+            <p class="poppins-regular">Doações</p>
+        </div>
+        <div class="oracao"  onclick="oracao('ch_oracao')">
+            <p class="poppins-regular2">Pedir Oração</p>
+        </div>
+    </div>
+    <div id="geral">
+        <section class="parallax1">
+            <section class="title">
+                <div class="box_logo">
+                    <div class="logo2"></div>
+                </div>
+                <div class="box_text">
+                    <p class="poppins-regular4" id="versiculo">Carregando...</p>
+                    <!-- <p class="poppins-regular4" id="mensagem">Carregando...</p> -->
+                </div>
+                <div 
+                    class="face"
+                    onclick="window.open('https://www.facebook.com/comunidade.evangelica.semear.bauru/?locale=pt_BR', '_blank')">
+                </div>
+                <div 
+                    class="youtube"
+                    onclick="window.open('https://www.youtube.com/@comunidadeevangelicasemear9632', '_blank')">
+                </div>
+                <div class="insta"></div>
+            </section>
+        </section>
+        <section class="fundo_ornamento" id="ynos">
+            <div class="ornamento1" ></div>
+            <div class="ornamento2">
+                <h1 class="poppins-regular5">Sobre Nós</h1>
+            </div>
+        </section>
+        <section class="defaut">
+            
+            <section class="info1">
+                <p class="poppins-regular">Somos o Pr. Luis Carlos Serrano e a Pra. Fátima Serrano, chamados por Deus para pregar Sua Palavra às nações. Acreditamos firmemente na Bíblia como o porto seguro da nossa fé e na graça de Jesus Cristo como o Salvador da humanidade.</p>
+                <p class="poppins-regular">Em 2015, atendendo ao chamado de Deus, fundamos a Comunidade Evangélica Semear na cidade de Bauru, SP. Nosso primeiro culto aconteceu em 27 de março de 2015, realizado na área de nossa residência. Permanecemos nesse local por 8 meses, até conseguirmos alugar um espaço adequado para acolher melhor as vidas que Deus tem nos confiado.</p>
+                <p class="poppins-regular">Com gratidão, seguimos cumprindo o propósito de semear a Palavra de Deus e alcançar corações para o Reino.</p>
 
+            </section>
+            <section class="foto1"></section>
         </section>
-        <section class="foto1"></section>
-    </section>
-    <section class="MVV">
-        <div class="Missao">
-            <p class="poppins-regular4" ID="start_text1">MISSÃO</p>
-            <div class="Micone"></div>
-            <section>
-                <p class="poppins-regular4" id="centralizado">Ser testemunha de Jesus Cristo em santidade e poder de Deus.</p>
+        <section class="MVV">
+            <div class="Missao">
+                <p class="poppins-regular4" ID="start_text1">MISSÃO</p>
+                <div class="Micone"></div>
+                <section>
+                    <p class="poppins-regular4" id="centralizado">Ser testemunha de Jesus Cristo em santidade e poder de Deus.</p>
+                </section>
+            </div>
+            <div class="Visao">
+                <p class="poppins-regular4" ID="start_text2">VISÃO</p>
+                <div class="Vicone"></div>
+                <section>
+                    <p class="poppins-regular4" id="centralizado">Levar as pessoas a conhecer Jesus e receber a salvação pela graça.
+                        Transmitir o poder de Deus em Jesus, libertando-as e curando-as em Seu nome.
+                        Conduzir as pessoas a um relacionamento pessoal com o Espírito Santo.
+                        </p>
+                </section>
+            </div>
+            <div class="Valores">
+                <p class="poppins-regular4" ID="start_text3">VALORES</p>
+                <div class="VVicone"></div>
+                <section>
+                    <p class="poppins-regular4" id="centralizado">Regra de ensinamento da Bíblia como base da Fé.
+                        Acolher as vidas com o amor de Jesus.
+                        Família a base da igreja de Jesus.
+                        Aconselhar as vidas a seguir as leis, os mandamento e os estatutos de Deus.</p>
+                </section>
+            </div>
+        </section>
+        <section class="parallax2">
+            <section class="fundo_ornamento1" id="yculto">
+                <div class="ornamento1"></div>
+                <div class="ornamento2">
+                    <h1 class="poppins-regular7">Cultos</h1>
+                </div>
             </section>
-        </div>
-        <div class="Visao">
-            <p class="poppins-regular4" ID="start_text2">VISÃO</p>
-            <div class="Vicone"></div>
-            <section>
-                <p class="poppins-regular4" id="centralizado">Levar as pessoas a conhecer Jesus e receber a salvação pela graça.
-                    Transmitir o poder de Deus em Jesus, libertando-as e curando-as em Seu nome.
-                    Conduzir as pessoas a um relacionamento pessoal com o Espírito Santo.
-                    </p>
+            
+            <section class="foto2"></section>
+            <section class="info2">
+                <h1 class="poppins-regular7" id="instr">Culto na Comunidade Evangélica Semear Bauru</h1>
+                <p class="poppins-regular4">Convidamos você e sua família para participar do nosso culto evangélico na Comunidade Evangélica Semear Bauru.</p>
+                <p class="poppins-regular4">O culto é uma oportunidade de enriquecer a alma, fortalecer a fé e se conectar ainda mais com a presença de Deus. Através da Palavra, louvores e oração, você encontrará conforto, direção e renovação espiritual para sua vida.</p>
+                <p class="poppins-regular4">Nossa igreja está de braços abertos esperando por você. Venha fazer parte deste momento de adoração e comunhão com Deus!</p>
             </section>
-        </div>
-        <div class="Valores">
-            <p class="poppins-regular4" ID="start_text3">VALORES</p>
-            <div class="VVicone"></div>
-            <section>
-                <p class="poppins-regular4" id="centralizado">Regra de ensinamento da Bíblia como base da Fé.
-                    Acolher as vidas com o amor de Jesus.
-                    Família a base da igreja de Jesus.
-                    Aconselhar as vidas a seguir as leis, os mandamento e os estatutos de Deus.</p>
+            <section class="foto2_2"></section>
+            <section class="defaut2">
+                <div class="box_info">
+                    <div
+                        class="video-thumbnail" 
+                        style="background-image: url('./img/thumb1.png');"
+                        onclick="window.open('https://fb.watch/x43XAN2h9a/', '_blank')">></div>
+                    <div class="info_info">
+                        <h1 class="poppins-regular" id="p1">Culto Semear ao vivo Bauru Primicias 12/01/2025</h1>
+                        <p class="poppins-regular6" id="youtube_descr">Gravação Ao Vivo.</p>
+                    </div>
+                </div>
+                <div class="box_info">
+                    <div
+                        class="video-thumbnail" 
+                        style="background-image: url('./img/thumb2.png');"
+                        onclick="window.open('https://fb.watch/x44okw-l5a/', '_blank')">></div>
+                        <div class="info_info">
+                            <h1 class="poppins-regular" id="p1">Culto Semear ao vivo Bauru 11/01/2025</h1>
+                            <p class="poppins-regular6" id="youtube_descr">Gravação Ao Vivo.</p>
+                        </div>
+                </div>
+                <div class="box_info">
+                    <div
+                        class="video-thumbnail" 
+                        style="background-image: url('./img/thumb3.png');"
+                        onclick="window.open('https://fb.watch/x44Gf0pLWS/', '_blank')">></div>
+                        <div class="info_info">
+                            <h1 class="poppins-regular" id="p1">Culto Semear ao vivo Bauru  Primicias 10/01/2025</h1>
+                            <p class="poppins-regular6" id="youtube_descr">Gravação Ao Vivo.</p>
+                        </div>
+                </div>
             </section>
-        </div>
-    </section>
-    <section class="parallax2">
-        <section class="fundo_ornamento1" id="yculto">
+            
+        </section>
+        <section class="fundo_ornamento" id="yevento">
             <div class="ornamento1"></div>
             <div class="ornamento2">
-                <h1 class="poppins-regular7">Cultos</h1>
+                <h1 class="poppins-regular5">Eventos</h1>
             </div>
         </section>
-        
-        <section class="foto2"></section>
-        <section class="info2">
-            <h1 class="poppins-regular7" id="instr">Culto na Comunidade Evangélica Semear Bauru</h1>
-            <p class="poppins-regular4">Convidamos você e sua família para participar do nosso culto evangélico na Comunidade Evangélica Semear Bauru.</p>
-            <p class="poppins-regular4">O culto é uma oportunidade de enriquecer a alma, fortalecer a fé e se conectar ainda mais com a presença de Deus. Através da Palavra, louvores e oração, você encontrará conforto, direção e renovação espiritual para sua vida.</p>
-            <p class="poppins-regular4">Nossa igreja está de braços abertos esperando por você. Venha fazer parte deste momento de adoração e comunhão com Deus!</p>
+        <section class="defaut_evento">
+            <section class="foto_evento1"></section>
+            <section class="info_evento1">
+                <!-- <h1 class="poppins-regular">Os eventos são realizados e anunciados com antecedência no site e nas redes sociais.</h1> -->
+                <!-- <p class="poppins-regular">Convidamos você e sua família para participar do nosso culto evangélico na Comunidade Evangélica Semear Bauru. O culto é uma oportunidade de enriquecer a alma, fortalecer a fé e se conectar ainda mais com a presença de Deus. Através da Palavra, louvores e oração, você encontrará conforto, direção e renovação espiritual para sua vida.</p>
+                <p class="poppins-regular">Nossa igreja está de braços abertos esperando por você. Venha fazer parte deste momento de adoração e comunhão com Deus!</p>
+            -->
+            </section>
         </section>
-        <section class="foto2_2"></section>
-        <section class="defaut2">
-            <div class="box_info">
-                <div
-                    class="video-thumbnail" 
-                    style="background-image: url('./img/thumb1.png');"
-                    onclick="window.open('https://fb.watch/x43XAN2h9a/', '_blank')">></div>
-                <div class="info_info">
-                    <h1 class="poppins-regular" id="p1">Culto Semear ao vivo Bauru Primicias 12/01/2025</h1>
-                    <p class="poppins-regular6" id="youtube_descr">Gravação Ao Vivo.</p>
+        <section class="parallax4">
+            <section class="fundo_ornamento1" id="ygaleria">
+                <div class="ornamento1" id="orn1"></div>
+                <div class="ornamento2">
+                    <h1 class="poppins-regular5">Galeria</h1>
                 </div>
-            </div>
-            <div class="box_info">
-                <div
-                    class="video-thumbnail" 
-                    style="background-image: url('./img/thumb2.png');"
-                    onclick="window.open('https://fb.watch/x44okw-l5a/', '_blank')">></div>
-                    <div class="info_info">
-                        <h1 class="poppins-regular" id="p1">Culto Semear ao vivo Bauru 11/01/2025</h1>
-                        <p class="poppins-regular6" id="youtube_descr">Gravação Ao Vivo.</p>
-                    </div>
-            </div>
-            <div class="box_info">
-                <div
-                    class="video-thumbnail" 
-                    style="background-image: url('./img/thumb3.png');"
-                    onclick="window.open('https://fb.watch/x44Gf0pLWS/', '_blank')">></div>
-                    <div class="info_info">
-                        <h1 class="poppins-regular" id="p1">Culto Semear ao vivo Bauru  Primicias 10/01/2025</h1>
-                        <p class="poppins-regular6" id="youtube_descr">Gravação Ao Vivo.</p>
-                    </div>
-            </div>
-        </section>
-        
-    </section>
-    <section class="fundo_ornamento" id="yevento">
-        <div class="ornamento1"></div>
-        <div class="ornamento2">
-            <h1 class="poppins-regular5">Eventos</h1>
-        </div>
-    </section>
-    <section class="defaut_evento">
-        <section class="foto_evento1"></section>
-        <section class="info_evento1">
-            <!-- <h1 class="poppins-regular">Os eventos são realizados e anunciados com antecedência no site e nas redes sociais.</h1> -->
-            <!-- <p class="poppins-regular">Convidamos você e sua família para participar do nosso culto evangélico na Comunidade Evangélica Semear Bauru. O culto é uma oportunidade de enriquecer a alma, fortalecer a fé e se conectar ainda mais com a presença de Deus. Através da Palavra, louvores e oração, você encontrará conforto, direção e renovação espiritual para sua vida.</p>
-            <p class="poppins-regular">Nossa igreja está de braços abertos esperando por você. Venha fazer parte deste momento de adoração e comunhão com Deus!</p>
-         -->
-        </section>
-    </section>
-    <section class="parallax4">
-        <section class="fundo_ornamento1" id="ygaleria">
-            <div class="ornamento1" id="orn1"></div>
-            <div class="ornamento2">
-                <h1 class="poppins-regular5">Galeria</h1>
-            </div>
-        </section>
-        <div class="gallery-container">
-            <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
-            
-            <div class="gallery">
-                <img src="./img/g1.jpg" alt="Imagem 1" class="gallery-item">
-                <img src="./img/g2.jpg" alt="Imagem 2" class="gallery-item">
-                <img src="./img/g3.jpeg" alt="Imagem 3" class="gallery-item">
-                <img src="./img/g4.jpeg" alt="Imagem 1" class="gallery-item">
-                <img src="./img/g5.jpeg" alt="Imagem 2" class="gallery-item">
-                <img src="./img/g6.jpeg" alt="Imagem 3" class="gallery-item">
-            </div>
+            </section>
+            <div class="gallery-container">
+                <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+                
+                <div class="gallery">
+                    <img src="./img/g1.jpg" alt="Imagem 1" class="gallery-item">
+                    <img src="./img/g2.jpg" alt="Imagem 2" class="gallery-item">
+                    <img src="./img/g3.jpeg" alt="Imagem 3" class="gallery-item">
+                    <img src="./img/g4.jpeg" alt="Imagem 1" class="gallery-item">
+                    <img src="./img/g5.jpeg" alt="Imagem 2" class="gallery-item">
+                    <img src="./img/g6.jpeg" alt="Imagem 3" class="gallery-item">
+                </div>
 
-            <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-        <div class="margem"></div>
-    </section>
-    <!-- Doacao -->
-    <section class="parallax3">
-        <section class="fundo_ornamento1" id="yoferta">
-            <div class="ornamento1" id="orn2"></div>
-            <div class="ornamento2">
-                <h1 class="poppins-regular7" id="onr2_titulo">Dízimos, Ofertas e Doações</h1>
+                <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="margem"></div>
+        </section>
+        <!-- Doacao -->
+        <section class="parallax3">
+            <section class="fundo_ornamento1" id="yoferta">
+                <div class="ornamento1" id="orn2"></div>
+                <div class="ornamento2">
+                    <h1 class="poppins-regular7" id="onr2_titulo">Dízimos, Ofertas e Doações</h1>
+                </div>
+            </section>
+            <div class="doacao">
+                <div class="banco">
+                    <h1 class="poppins-regular" id="p2">Transferência Bancária</h1>
+                    <div class="foto_banco"></div>
+                    <div class="info_banco">
+                        <h1 class="poppins-regular">Banco do Brasil</h1>
+                        <p class="poppins-regular6" id="info_bnk">Comunidade Evangélica Semear Bauru</p>
+                        <p class="poppins-regular6" id="info_bnk">Agência 6853-5</p>
+                        <p class="poppins-regular6" id="info_bnk">Conta Corrente: 30026-8</p>
+                    </div>
+                    <div class="qrinst"></div>
+                </div>
+                <div class="pix">
+                    <h1 class="poppins-regular" id="p2">PIX</h1>
+                    <div class="box_qr">
+                        <div class="qrcode"></div>
+                        <button class="copiacola" onclick="copia()">
+                            <div class="cc"></div>
+                            <p class="poppins-regular4" id="copy_button">Copiar código</p>
+                        </button>
+                    </div>
+                    <div class="qrinst">
+                        <h1 class="poppins-regular" id="instr">Instruções para Pagamento com QR Code</h1>
+                        <p class="poppins-regular6">1. Abra o aplicativo do seu banco no celular.</p>
+                        <p class="poppins-regular6">2. Localize a opção "Pagar com QR Code".</p>
+                        <p class="poppins-regular6">3. Aponte a câmera do celular para o QR Code.</p>
+                        <p class="poppins-regular6">4. Confirme os detalhes do pagamento.</p>
+                        <p class="poppins-regular6">5. Finalize o pagamento.</p>
+                    </div>
+                    <h1 class="poppins-regular" id="p4">Transferência Bancária</h1>
+                    <div class="foto_banco2">
+                        <p class="poppins-regular6" id="p5">Comunidade Evangélica Semear Bauru</p>
+                        <p class="poppins-regular6">Agência 6853-5</p>
+                        <p class="poppins-regular6">Conta Corrente: 30026-8</p>
+                        <p class="poppins-regular6">Pix CNPJ 22840215000153</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="doacao">
-            <div class="banco">
-                <h1 class="poppins-regular" id="p2">Transferência Bancária</h1>
-                <div class="foto_banco"></div>
-                <div class="info_banco">
-                    <h1 class="poppins-regular">Banco do Brasil</h1>
-                    <p class="poppins-regular6" id="info_bnk">Comunidade Evangélica Semear Bauru</p>
-                    <p class="poppins-regular6" id="info_bnk">Agência 6853-5</p>
-                    <p class="poppins-regular6" id="info_bnk">Conta Corrente: 30026-8</p>
-                </div>
-                <div class="qrinst"></div>
+        <!-- Mapa -->
+        <section class="fundo_mapa">
+            <div class="ornamento1" id="p3"></div>
+            <div class="ornamento2">
+                <h1 class="poppins-regular5">Localização</h1>
+                <p class="poppins-regular">Igreja Evangélica Semear de Bauru</p>
+                <p class="poppins-regular">R. Antônio Cintra Júnior, 3-10 - Jardim Cruzeiro, Bauru - SP, 17030-743</p>
             </div>
-            <div class="pix">
-                <h1 class="poppins-regular" id="p2">PIX</h1>
-                <div class="box_qr">
-                    <div class="qrcode"></div>
-                    <button class="copiacola" onclick="copia()">
-                        <div class="cc"></div>
-                        <p class="poppins-regular4" id="copy_button">Copiar código</p>
-                    </button>
-                </div>
-                <div class="qrinst">
-                    <h1 class="poppins-regular" id="instr">Instruções para Pagamento com QR Code</h1>
-                    <p class="poppins-regular6">1. Abra o aplicativo do seu banco no celular.</p>
-                    <p class="poppins-regular6">2. Localize a opção "Pagar com QR Code".</p>
-                    <p class="poppins-regular6">3. Aponte a câmera do celular para o QR Code.</p>
-                    <p class="poppins-regular6">4. Confirme os detalhes do pagamento.</p>
-                    <p class="poppins-regular6">5. Finalize o pagamento.</p>
-                </div>
-                <h1 class="poppins-regular" id="p4">Transferência Bancária</h1>
-                <div class="foto_banco2">
-                    <p class="poppins-regular6" id="p5">Comunidade Evangélica Semear Bauru</p>
-                    <p class="poppins-regular6">Agência 6853-5</p>
-                    <p class="poppins-regular6">Conta Corrente: 30026-8</p>
-                    <p class="poppins-regular6">Pix CNPJ 22840215000153</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Mapa -->
-    <section class="fundo_mapa">
-        <div class="ornamento1" id="p3"></div>
-        <div class="ornamento2">
-            <h1 class="poppins-regular5">Localização</h1>
-            <p class="poppins-regular">Igreja Evangélica Semear de Bauru</p>
-            <p class="poppins-regular">R. Antônio Cintra Júnior, 3-10 - Jardim Cruzeiro, Bauru - SP, 17030-743</p>
-        </div>
-    </section>
-    <iframe class="google_maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14763.336584449597!2d-49.0444895132688!3d-22.322111424871853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sigreja%20semear!5e0!3m2!1spt-BR!2sbr!4v1734744782182!5m2!1spt-BR!2sbr" width="1350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+        </section>
+        <iframe class="google_maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14763.336584449597!2d-49.0444895132688!3d-22.322111424871853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sigreja%20semear!5e0!3m2!1spt-BR!2sbr!4v1734744782182!5m2!1spt-BR!2sbr" width="1350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     
     
     
