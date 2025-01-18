@@ -15,14 +15,17 @@
     .box_logo{
         display: none;
     }
+
+    /*
+    
+    Blocos relacionados ao versículo e icones das redes sociais
+    */
     .title{
-        grid-template-columns: 1fr; 
+        grid-template-columns: auto; 
         grid-template-rows: 50px 300px;
         justify-items: center;
         align-items: center;
         margin: 40px;
-        
-        
     }
     .box_text{
         width: 80vw;
@@ -30,22 +33,19 @@
         grid-row: 2;
         
     }
-    .face, .youtube, .insta{
+
+    /*
+    
+    icones das redes sociais
+    */
+    .bloco1_redes{
+        display: flex;
+        justify-content: space-between;
         grid-column: 1;
-        margin-top: 100px;
         grid-row: 1;
-        justify-self: start;
-        margin-left: 60px;
+        gap: 20px;
     }
-    .face{
-        transform: translate();
-    }
-    .youtube{
-        transform: translate(80px);
-    }
-    .insta{
-        transform: translate(160px);
-    }
+    
     #versiculo{
         font-size: 20px;
     }
@@ -156,7 +156,8 @@
     }
     .defaut_evento{
         grid-template-columns: 20px auto auto auto 20px; 
-        height: 500px;
+        margin-bottom: 210px;
+       
     }
     .info_evento1{
         align-items: start;
@@ -216,12 +217,7 @@
         max-width: 100vw;
         overflow-x: none;
     }
-    .youtube:hover, .face:hover, .youtube:hover{
-        transform: scale(1.5);
-        transition: none;
-        cursor:none;
-        
-    }
+    
     .MVV{
         display: block;
         height: 850px;
@@ -355,6 +351,13 @@
         margin: 0px;
         
     }
+    .redes_footer{
+        transform: translateX(50px);
+    }
+    .assinatura{
+        justify-self: center;
+        margin-top: 60px;
+        }
 }
 
 @media screen and (max-width: 455px){
@@ -374,5 +377,39 @@
     .google_maps {
         max-width: 450px;
        
+    }
+    .ped_oracao{
+        height: 100%;
+    }
+    .ped_oracao2{
+        width: 90vw;
+        height: 580px;
+        padding-left: 0px;
+    }
+    .ped_oracao_input,.ped_oracao_input7,.text_oracao{
+        width: 300px;
+       
+    }
+    .ped_oracao_input1,.ped_oracao_input2,.ped_oracao_input3,.text_oracao1,.text_oracao2,.text_oracao3{
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .ped_oracao_input4,.ped_oracao_input5,.ped_oracao_input6{
+        width: 20px;
+        height: 20px;
+    }
+    .enviar{
+        display: grid;
+    }
+    .botao_enviar{
+        margin-left: 10px;
+        height: 40px;
+        width: 290px;
+
+    }
+    .insta:hover, .youtube:hover, .face:hover{
+        transform: none;
+        
     }
 } 

@@ -97,8 +97,12 @@ function nos(posicao){
 
 function culto(yculto){
     const culto = document.getElementById(yculto);
+    const menuMobile = document.getElementById('menu_mobile_1');
+    const geral = document.getElementById('geral');
     
     if (culto) {
+        menuMobile.style.display = 'none';
+        geral.style.display = 'block';
         const cultoPosition = culto.getBoundingClientRect().top + window.pageYOffset -60;
 
         window.scrollTo({
@@ -109,10 +113,14 @@ function culto(yculto){
 }
 
 function evento(yevento){
+    const menuMobile = document.getElementById('menu_mobile_1');
+    const geral = document.getElementById('geral');
     const evento = document.getElementById(yevento);
     
     if (evento) {
-        const eventoPosition = evento.getBoundingClientRect().top + window.pageYOffset + 50;
+        menuMobile.style.display = 'none';
+        geral.style.display = 'block';
+        const eventoPosition = evento.getBoundingClientRect().top + window.pageYOffset-100;
 
         window.scrollTo({
             top: eventoPosition,
@@ -122,10 +130,14 @@ function evento(yevento){
 }
 
 function galeria(ygaleria){
+    const menuMobile = document.getElementById('menu_mobile_1');
+    const geral = document.getElementById('geral');
     const galeria = document.getElementById(ygaleria);
     
     if (galeria) {
-        const galeriaPosition = galeria.getBoundingClientRect().top + window.pageYOffset + 50;
+        menuMobile.style.display = 'none';
+        geral.style.display = 'block';
+        const galeriaPosition = galeria.getBoundingClientRect().top + window.pageYOffset-90;
 
         window.scrollTo({
             top: galeriaPosition,
@@ -135,9 +147,13 @@ function galeria(ygaleria){
 }
 
 function doacao(yoferta){
+    const menuMobile = document.getElementById('menu_mobile_1');
+    const geral = document.getElementById('geral');
     const doacao = document.getElementById(yoferta);
     
     if (doacao) {
+        menuMobile.style.display = 'none';
+        geral.style.display = 'block';
         const doacaoPosition = doacao.getBoundingClientRect().top + window.pageYOffset - 60;
 
         window.scrollTo({
@@ -171,11 +187,13 @@ function oracao(oracao_element){
     const text_oracao6 = document.getElementById('ch_text_oracao6');
     const botao_enviar = document.getElementById('botao_enviar');
     const ped_oracao2 = document.getElementById('ped_oracao_back');
+    const geral = document.getElementById('geral');
     home();
 
     if (oracao_id) {
         oracao_id.style.width = '100%';
         bodyElement.style.overflow = 'hidden';
+        geral.style.display = 'none';
         ped_oracao_titulo.style.display = 'flex';
         ped_oracao_titulo1.style.display = 'flex';
         ped_oracao_titulo2.style.display = 'flex';

@@ -331,10 +331,18 @@ header{
     background-image: url(./img/Logo-removebg-preview.png);
     background-size: cover;
 }
+
+/*
+
+
+
+Versículo da bíblia
+a classe title afeta a área do versículo e também os ícones das redes sociais
+*/
 .title{
     padding-top: 50px;
     display: grid;
-    grid-template-columns: 10vw 30vw 50px 50px 1fr; 
+    grid-template-columns: 10vw 30vw 15vw 50px 1fr; 
     grid-template-rows: 300px 100px;
     color: white;
     height: 90px;
@@ -354,67 +362,40 @@ header{
 #versiculo{
     font-size: 30px;
 }
-.face{
-    margin-top: 50px;
+
+/*
+
+
+Botões para as redes sociais*/
+.bloco1_redes{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 3/5;
+    grid-row: 2;
+}
+.face,.youtube,.insta{
     width: 50px;
     height: 50px;
-    background-image: url(./img/face.png);
     background-size: cover;
-    grid-column: 3;
-    grid-row: 2;
     transition: 0.3s;
     cursor: pointer;
 }
-.face#footer{
-    margin: 0px;
-    grid-column: 2;
-    grid-row: 1;
-}
-.face:hover{
-    transform: scale(1.1);
+.face{
+    background-image: url(./img/face.png);
 }
 .youtube{
-    margin-top: 50px;
-    width: 50px;
-    height: 50px;
     background-image: url(./img/youtube.png);
-    background-size: cover;
-    grid-column: 4;
-    grid-row: 2;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.youtube#footer{
-    margin-top: 0px;
-    grid-column: 2;
-    grid-row: 1;
-    transform: translateX(70px);
-}
-.youtube:hover{
-    transform: scale(1.1);
-    
 }
 .insta{
-    margin-top: 50px;
-    width: 50px;
-    height: 50px;
     background-image: url(./img/Insta.png);
-    background-size: cover;
-    grid-column: 5;
-    grid-row: 2;
-    transition: 0.3s;
-    cursor: pointer;
 }
-.insta#footer{
-    margin-top: 0px;
-    grid-column: 2;
-    grid-row: 1;
-    transform: translateX(140px);
-}
-.insta:hover{
+.insta:hover, .youtube:hover, .face:hover{
     transform: scale(1.1);
     
 }
+/*
+
+*/
 .menu_hamburguer{
     display: none;
 }
@@ -752,10 +733,15 @@ body{
     gap: 20px;
 
 }
+/*
+
+
+bloco relacionado ao rodapé da página
+*/
 .footer{
     display: grid;
     grid-template-columns: 33vw 33vw 33vw; 
-    grid-template-rows: 150px;
+    grid-template-rows: 100px 30px;
     align-items: center;
     justify-items: center;
     background-color: rgb(216, 241, 255);
@@ -779,8 +765,31 @@ body{
     background-image: url(./img/Logo.jpg);
     background-size: cover;
     border-radius: 50%;
-
+    
 }
+.redes_footer{
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1;
+    gap: 20px;
+    
+}
+.assinatura{
+    justify-self: end;
+    margin-right: 20px;
+    grid-column: 1/4;
+    grid-row: 2;
+    
+}
+#assinatura_cursor{
+    cursor: pointer;
+}
+/*
+
+
+
+*/
 .fundo_versiculo{
     height: 200px;
 }
@@ -978,4 +987,10 @@ body{
 .geral{
     display: block;
 }
-
+.text_assinatura{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(22, 105, 131);
+    font-size: 13px;
+}
