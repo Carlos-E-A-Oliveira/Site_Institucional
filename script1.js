@@ -367,6 +367,13 @@ function menu_ham_click() {
         menuMobile.style.display = 'none';
         geral.style.display = 'block';
     }
+    
 }
+
+//necessário para corrigir o googlemaps que perdia conexão sempre que há interação com  o site
+window.addEventListener("resize", () => {
+    const iframe = document.querySelector(".google_maps");
+    iframe.src = iframe.src;
+  });
 
 
