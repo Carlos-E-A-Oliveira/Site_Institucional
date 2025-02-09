@@ -1,7 +1,7 @@
+//Função de copiar código para a area de transferencia
 function copia(){
     const codigo = "00020126740014br.gov.bcb.pix0114228402150001530234Comunidade Evangelica Semear Bauru5204000053039865802BR5925COMUNIDADE EVANGELICA SEM6005BAURU62290525AoWEmu48P2fjmZ0fAXkFdY4Aq630405AD";
     
-    // Usando a API moderna do Clipboard
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(codigo)
             .then(() => {
@@ -63,6 +63,7 @@ function copia(){
 
     
 }
+
 
 function home() {
     const menuMobile = document.getElementById('menu_mobile_1');
@@ -301,7 +302,7 @@ function enviar() {
     const areaText = area.value;
     const relatoText = relato.value;
     let textoFinal = `Nome: ${nomeText} // Orar por:${chk1Verificado ? ' - Familia' : ''}${chk2Verificado? ' - Finanças' : ''}${chk3Verificado? ' - Cura' : ''}${chk4Verificado? ' - Libertação' : ''}${chk5Verificado? ' - Vida Espiritual' : ''}${chk6Verificado? ' - Emprego' : ''} - ${areaText} // Relato: ${relatoText}`;
-    const telefoneNum = 5514988070943;
+    const telefoneNum = 5514998410705;
     const whatsappLink = `https://wa.me/${telefoneNum}?text=${textoFinal}`;
 
     if(!chkbx1.checked && !chkbx2.checked && !chkbx3.checked && !chkbx4.checked && !chkbx5.checked && !chkbx6.checked && !areaText){
