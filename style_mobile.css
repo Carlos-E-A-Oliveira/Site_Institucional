@@ -371,18 +371,8 @@
         height: 70px;
     }
     .ped_oracao2{
-        margin-top: 25px;
-        display: none;
-        border-radius: 10px;
-        width: 300px;
-        height: 500px;
-        background-color: aliceblue;
-        align-content: center;
-        justify-content: center;
-        padding-left: 50px;
-        
-        
-    }
+        width: 100px;
+        }
     /* tamanho dos textos "Pedir Oração" */
     .text_oracao1,.text_oracao2,.text_oracao3,.text_oracao4,.text_oracao5,.text_oracao6
     {
