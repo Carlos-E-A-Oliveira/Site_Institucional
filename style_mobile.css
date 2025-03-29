@@ -360,7 +360,7 @@
         }
 }
 
-@media screen and (max-width: 455px){
+@media screen and (max-width: 650px){
     .foto_evento1{
         background-image: url(./img/evento_cel.jpg);
         height: 32vh;
@@ -379,7 +379,7 @@
        
     }
     .ped_oracao{
-        height: 100%;
+        height: 600px;
     }
     .ped_oracao2{
         width: 90vw;
@@ -387,13 +387,16 @@
         padding-left: 0px;
     }
     .ped_oracao_input,.ped_oracao_input7,.text_oracao{
-        width: 300px;
+        width: 250px;
+        margin-left: 10px;
+        
        
     }
-    .ped_oracao_input1,.ped_oracao_input2,.ped_oracao_input3,.text_oracao1,.text_oracao2,.text_oracao3{
-        margin-left: 10px;
-        width: 20px;
+    .ped_oracao_input1,.ped_oracao_input2,.ped_oracao_input3,.text_oracao1,.text_oracao2,.text_oracao3,.text_oracao4,.text_oracao5,.text_oracao6{
+        margin-left: 0px;
+        width: 40px;
         height: 20px;
+        font-size: small;
     }
     .ped_oracao_input4,.ped_oracao_input5,.ped_oracao_input6{
         width: 20px;
@@ -403,9 +406,9 @@
         display: grid;
     }
     .botao_enviar{
-        margin-left: 10px;
+        margin-left: 100px;
         height: 40px;
-        width: 290px;
+        width: 100px;
 
     }
     .insta:hover, .youtube:hover, .face:hover{
