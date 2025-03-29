@@ -360,7 +360,7 @@
         }
 }
 
-@media screen and (max-width: 455px)
+@media screen and (max-width: 650px)
 {
     .container1{
         width: 50px;
@@ -406,7 +406,7 @@
     .poppins-regular5 {
         font-family: "Poppins", serif;
         font-weight: 400;
-        font-size: medium;
+        font-size: small;
         font-style: normal;
         color: rgb(22, 105, 131);
         font-size: 40px;
