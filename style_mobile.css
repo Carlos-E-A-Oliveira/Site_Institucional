@@ -437,7 +437,7 @@
     .ped_oracao2{
         width: 95vw;
         height: 580px;
-        padding-left: 10px;
+        /* padding-left: 10px; */
     }
     .insta:hover, .youtube:hover, .face:hover{
         transform: none;
