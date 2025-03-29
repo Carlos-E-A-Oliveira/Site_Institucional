@@ -363,76 +363,35 @@
 @media screen and (max-width: 650px)
 {
     .container1{
-        /* width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px;
-        margin-left: 20px; */
-        display: none;
+        /* padding: 5px; */
+        margin-left: 10px;
+        /* display: none; */
     }
     .poppins-regular {
-        font-family: "Poppins", serif;
-        font-weight: 400;
         font-size: small;
-        font-style: normal;
-        color: rgb(22, 105, 131);
-        margin-bottom: 10px;
-        
     }
     .poppins-regular2 {
-        font-family: "Poppins", serif;
-        font-weight: 400;
         font-size:small;
-        font-style: normal;
-        color: white;
     }
     .poppins-regular3 {
-        font-family: "Poppins", serif;
-        font-weight: 400;
         font-size:medium;
-        font-style: normal;
-        color: white;
     }
     .poppins-regular4 {
-        font-family: "Poppins", serif;
-        font-weight: 400;
-        font-size: medium;
-        font-style: normal;
-        color: rgb(246, 248, 248);
-        margin-bottom: 10px;
-        
+        font-size: small;
     }
     .poppins-regular5 {
-        font-family: "Poppins", serif;
-        font-weight: 400;
-        font-size: small;
-        font-style: normal;
-        color: rgb(22, 105, 131);
-        font-size: 40px;
-        
+        font-size: 20px;
     }
     .poppins-regular6 {
-        font-family: "Poppins", serif;
-        font-weight: 400;
         font-style: small;
-        color: rgb(22, 105, 131);
-        font-size: 15px;
-        text-align: justify;
-        padding: 5px;
-    
-    
-        
     }
     .poppins-regular7 {
-        font-family: "Poppins", serif;
-        font-weight: 400;
         font-size: medium;
-        font-style: normal;
-        color: rgb(255, 255, 255);
-        font-size: 40px;
-        
     }
     .foto_evento1{
         background-image: url(./img/evento_cel.jpg);
