@@ -369,7 +369,12 @@
     .logo{
         width: 50px;
         height: 70px;
-        margin-right: 20px;
+    }
+    .ped_oracao_input, .ped_oracao_input7{
+        width: 300px;
+    }
+    .botao_enviar{
+        width: 30px;
     }
     .poppins-regular {
         font-size: small;
