@@ -373,7 +373,7 @@
     /* tamanho dos textos "Pedir Oração" */
     .text_oracao1,.text_oracao2,.text_oracao3,.text_oracao4,.text_oracao5,.text_oracao6
     {
-        font-size: 13px;
+        font-size: small;
     }
     /* tamanho das caixas de texto "Pedir Oração" */
     .ped_oracao_input, .ped_oracao_input7{
