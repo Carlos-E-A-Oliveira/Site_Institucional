@@ -385,6 +385,7 @@
     /* tamanho do botão Enviar */
     .botao_enviar{
         width: 30px;
+        background-color: rgb(65, 42, 165);
     }
     /* Textos do corpo */
     .poppins-regular {
