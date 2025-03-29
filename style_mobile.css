@@ -377,7 +377,7 @@
     }
     /* tamanho das caixas de texto "Pedir Oração" */
     .ped_oracao_input, .ped_oracao_input7{
-        width: 200px;
+        width: 300px;
     }
     /* tamanho do botão Enviar */
     .botao_enviar{
@@ -428,13 +428,15 @@
         max-width: 450px;
        
     }
+    /* fundo verde pedido de oração */
     .ped_oracao{
         height: 100%;
     }
+    /* mascara de fundo pedido de oração */
     .ped_oracao2{
-        width: 90vw;
+        width: 95vw;
         height: 580px;
-        padding-left: 0px;
+        padding-left: 10px;
     }
     .insta:hover, .youtube:hover, .face:hover{
         transform: none;
