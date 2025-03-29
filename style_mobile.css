@@ -377,8 +377,8 @@
     }
     /* tamanho das caixas de texto "Pedir Oração" */
     .ped_oracao_input, .ped_oracao_input7{
-        padding-left: 30px;
-        padding-right: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
         width: 50px;
     }
     /* tamanho do botão Enviar */
