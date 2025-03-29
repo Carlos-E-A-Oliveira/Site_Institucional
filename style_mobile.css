@@ -433,12 +433,6 @@
     .ped_oracao{
         height: 100%;
     }
-    /* mascara de fundo pedido de oração */
-    .ped_oracao2{
-        width: 95vw;
-        height: 580px;
-        /* padding-left: 10px; */
-    }
     .insta:hover, .youtube:hover, .face:hover{
         transform: none;
         
