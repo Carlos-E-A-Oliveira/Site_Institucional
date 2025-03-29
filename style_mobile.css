@@ -457,12 +457,6 @@
     .enviar{
         display: grid;
     }
-    .botao_enviar{
-        margin-left: 10px;
-        height: 40px;
-        width: 290px;
-
-    }
     .insta:hover, .youtube:hover, .face:hover{
         transform: none;
         
