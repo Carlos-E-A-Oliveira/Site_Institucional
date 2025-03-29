@@ -370,9 +370,6 @@
         width: 50px;
         height: 70px;
     }
-    .ped_oracao2{
-        width: 100px;
-        }
     /* tamanho dos textos "Pedir Oração" */
     .text_oracao1,.text_oracao2,.text_oracao3,.text_oracao4,.text_oracao5,.text_oracao6
     {
@@ -437,11 +434,11 @@
         height: 100%;
     }
     .ped_oracao2{
-        width: 90vw;
+        width: 80vw;
         height: 580px;
         padding-left: 0px;
     }
-    .ped_oracao_input,.ped_oracao_input7,.text_oracao{
+    /* .ped_oracao_input,.ped_oracao_input7,.text_oracao{
         width: 300px;
        
     }
@@ -453,10 +450,10 @@
     .ped_oracao_input4,.ped_oracao_input5,.ped_oracao_input6{
         width: 20px;
         height: 20px;
-    }
-    .enviar{
+    } */
+    /* .enviar{
         display: grid;
-    }
+    } */
     .insta:hover, .youtube:hover, .face:hover{
         transform: none;
         
