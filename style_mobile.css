@@ -433,6 +433,10 @@
     .ped_oracao{
         height: 100%;
     }
+    .ped_oracao2
+    {
+        width: 90vw;
+    }
     .insta:hover, .youtube:hover, .face:hover{
         transform: none;
         
